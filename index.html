@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TechMech Engineering - Leading manufacturer of belt, roller, screw & slat conveyor systems. 10+ years experience in material handling solutions. Based in Vapi, Gujarat.">
+<meta name="keywords" content="conveyor systems, belt conveyor, roller conveyor, screw conveyor, material handling, industrial automation, Vapi Gujarat">
+<title>TechMech Engineering | Efficiency In Every Move | Material Handling Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TechMech Engineering",
+  "url": "https://www.techmechengineering.co.in",
+  "description": "Manufacturer of material handling and conveying systems",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Plot No. 584/Pakki 1, Gala No. 3, Near Canal, 4th Phase GIDC",
+    "addressLocality": "Vapi",
+    "addressRegion": "Gujarat",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-9512696191",
+    "contactType": "sales"
+  }
+}
+</script>
+<style>
+:root{--primary:#0C8DD0;--primary-dark:#0a7ab5;--primary-light:#e8f4fb;--secondary:#6E6E72;--light-bg:#F4F5F7;--dark:#2E2E2E;--darker:#1a1a1a;--white:#FFFFFF;--border:#e0e0e0;--shadow:0 4px 24px rgba(0,0,0,.08);--shadow-lg:0 12px 48px rgba(0,0,0,.12);--radius:8px;--radius-lg:16px;--transition:.3s cubic-bezier(.4,0,.2,1);--font-heading:'Barlow',sans-serif;--font-body:'Outfit',sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:var(--font-body);color:var(--dark);background:var(--white);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}a{text-decoration:none;color:inherit}ul{list-style:none}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:700;line-height:1.2}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+.section{padding:100px 0}
+.section-label{font-family:var(--font-heading);font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--primary);margin-bottom:12px;display:flex;align-items:center;gap:12px}
+.section-label::before{content:'';width:32px;height:2px;background:var(--primary)}
+.section-title{font-size:clamp(32px,4vw,48px);color:var(--dark);margin-bottom:20px}
+.section-desc{font-size:17px;color:var(--secondary);max-width:640px;line-height:1.7}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;font-family:var(--font-heading);font-size:15px;font-weight:600;letter-spacing:.5px;border:none;border-radius:var(--radius);cursor:pointer;transition:var(--transition);text-transform:uppercase}
+.btn-primary{background:var(--primary);color:var(--white);box-shadow:0 4px 16px rgba(12,141,208,.3)}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(12,141,208,.4)}
+.btn-outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.4)}
+.btn-outline:hover{background:rgba(255,255,255,.1);border-color:var(--white)}
+.btn-dark{background:var(--dark);color:var(--white)}.btn-dark:hover{background:var(--darker);transform:translateY(-2px)}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideInLeft{from{opacity:0;transform:translateX(-60px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideInRight{from{opacity:0;transform:translateX(60px)}to{opacity:1;transform:translateX(0)}}
+@keyframes conveyorMove{from{background-position:0 0}to{background-position:40px 0}}
+@keyframes scrollLogos{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}.reveal.active{opacity:1;transform:translateY(0)}
+
+/* HEADER */
+.header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:var(--transition);height:80px}
+.header.scrolled{border-bottom-color:var(--border);box-shadow:0 2px 20px rgba(0,0,0,.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:80px;max-width:1280px;margin:0 auto;padding:0 24px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-icon{width:44px;height:44px;background:var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.logo-icon::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:repeating-linear-gradient(90deg,var(--white) 0px,var(--white) 4px,transparent 4px,transparent 8px);animation:conveyorMove 1s linear infinite}
+.logo-icon i{color:white;font-size:20px;z-index:1}
+.logo-text{display:flex;flex-direction:column}
+.logo-name{font-family:var(--font-heading);font-size:20px;font-weight:800;color:var(--dark);letter-spacing:-.5px;line-height:1.1}
+.logo-tagline{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--primary)}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{padding:8px 16px;font-size:14px;font-weight:500;color:var(--dark);border-radius:6px;transition:var(--transition);position:relative}
+.nav-links a:hover{color:var(--primary);background:var(--primary-light)}
+.nav-links .dropdown{position:relative}
+.nav-links .dropdown-menu{position:absolute;top:100%;left:0;min-width:240px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:8px;opacity:0;visibility:hidden;transform:translateY(8px);transition:var(--transition);border:1px solid var(--border)}
+.nav-links .dropdown:hover .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.dropdown-menu a{display:flex;align-items:center;gap:10px;padding:10px 14px;font-size:13px;border-radius:6px}
+.dropdown-menu a i{color:var(--primary);width:18px}
+.header-cta{display:flex;align-items:center;gap:12px}
+.header-cta .btn{padding:10px 24px;font-size:13px}
+.header-phone{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--dark)}
+.header-phone i{color:var(--primary)}
+.mobile-toggle{display:none;background:none;border:none;font-size:24px;color:var(--dark);cursor:pointer}
+.mobile-menu{display:none;position:fixed;top:80px;left:0;right:0;bottom:0;background:var(--white);z-index:999;padding:24px;overflow-y:auto}
+.mobile-menu.active{display:block}
+.mobile-menu a{display:block;padding:14px 0;font-size:16px;font-weight:500;border-bottom:1px solid var(--border)}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:linear-gradient(135deg,#0a1628 0%,#1a2d4a 50%,#0d1f3c 100%);overflow:hidden;padding-top:80px}
+.hero-bg-pattern{position:absolute;inset:0;background-image:radial-gradient(circle at 20% 50%,rgba(12,141,208,.15) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(12,141,208,.08) 0%,transparent 40%)}
+.hero-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(12,141,208,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(12,141,208,.05) 1px,transparent 1px);background-size:60px 60px}
+.hero-conveyor-line{position:absolute;bottom:120px;left:0;right:0;height:3px;background:repeating-linear-gradient(90deg,var(--primary) 0px,var(--primary) 20px,transparent 20px,transparent 40px);opacity:.3;animation:conveyorMove 2s linear infinite}
+.hero-conveyor-line:nth-child(2){bottom:130px;opacity:.15;animation-duration:3s}
+.hero-content{position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero-text{animation:slideInLeft 1s ease forwards}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(12,141,208,.15);border:1px solid rgba(12,141,208,.3);padding:8px 16px;border-radius:50px;font-size:12px;font-weight:600;color:#5bc0eb;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
+.hero-badge i{font-size:10px}
+.hero h1{font-size:clamp(36px,5vw,60px);font-weight:900;color:var(--white);line-height:1.08;margin-bottom:24px;letter-spacing:-1px}
+.hero h1 span{color:var(--primary)}
+.hero-sub{font-size:18px;color:rgba(255,255,255,.7);line-height:1.7;margin-bottom:36px;max-width:520px}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:48px}
+.hero-trust{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.trust-item{display:flex;align-items:center;gap:12px;padding:12px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);transition:var(--transition)}
+.trust-item:hover{background:rgba(12,141,208,.1);border-color:rgba(12,141,208,.3)}
+.trust-item i{width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:rgba(12,141,208,.2);border-radius:8px;color:#5bc0eb;font-size:14px;flex-shrink:0}
+.trust-item span{font-size:13px;font-weight:500;color:rgba(255,255,255,.85);line-height:1.3}
+.hero-visual{position:relative;animation:slideInRight 1s ease forwards}
+.hero-visual-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:32px;backdrop-filter:blur(20px)}
+.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.stat-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px;text-align:center;transition:var(--transition)}
+.stat-card:hover{background:rgba(12,141,208,.1);transform:translateY(-4px)}
+.stat-number{font-family:var(--font-heading);font-size:42px;font-weight:900;color:var(--primary);line-height:1;margin-bottom:8px}
+.stat-label{font-size:13px;color:rgba(255,255,255,.6);font-weight:500}
+.hero-equipment{margin-top:20px;padding:20px;background:rgba(12,141,208,.08);border:1px solid rgba(12,141,208,.2);border-radius:12px}
+.hero-equipment h4{font-size:14px;color:rgba(255,255,255,.9);margin-bottom:12px}
+.equipment-tags{display:flex;flex-wrap:wrap;gap:8px}
+.equipment-tag{padding:6px 14px;background:rgba(12,141,208,.15);border:1px solid rgba(12,141,208,.25);border-radius:50px;font-size:12px;font-weight:500;color:#5bc0eb}
+
+/* ABOUT */
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-image{position:relative;border-radius:var(--radius-lg);overflow:hidden}
+.about-img-placeholder{width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,#e8f4fb 0%,#d0e8f5 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;border-radius:var(--radius-lg)}
+.about-img-placeholder i{font-size:64px;color:var(--primary);opacity:.5}
+.about-img-placeholder span{font-size:14px;color:var(--secondary);font-weight:500}
+.about-experience{position:absolute;bottom:24px;right:24px;background:var(--primary);color:var(--white);padding:20px 28px;border-radius:12px;text-align:center;box-shadow:0 8px 32px rgba(12,141,208,.3)}
+.about-experience .number{font-family:var(--font-heading);font-size:40px;font-weight:900;line-height:1}
+.about-experience .label{font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;opacity:.9}
+.about-content p{font-size:16px;color:var(--secondary);line-height:1.8;margin-bottom:24px}
+.about-products{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0 32px}
+.about-product-item{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--dark);padding:8px 0}
+.about-product-item i{color:var(--primary);font-size:12px}
+.mv-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.mv-card{padding:24px;border-radius:12px;border:1px solid var(--border);transition:var(--transition)}
+.mv-card:hover{border-color:var(--primary);box-shadow:0 4px 20px rgba(12,141,208,.1)}
+.mv-card h4{font-size:14px;font-weight:700;color:var(--primary);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.mv-card p{font-size:13px;color:var(--secondary);line-height:1.6}
+
+/* PRODUCTS */
+.products{background:var(--light-bg)}
+.products-header{text-align:center;margin-bottom:60px}
+.products-header .section-label{justify-content:center}
+.products-header .section-desc{margin:0 auto}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.product-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);transition:var(--transition);cursor:pointer}
+.product-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:var(--primary)}
+.product-img{height:220px;background:linear-gradient(135deg,#e8f4fb,#d0e8f5);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:16px}
+.product-img img{width:100%;height:100%;object-fit:contain}
+.product-img i{font-size:48px;color:var(--primary);opacity:.6}
+.product-img::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:repeating-linear-gradient(90deg,var(--primary) 0px,var(--primary) 8px,transparent 8px,transparent 16px);opacity:0;transition:var(--transition)}
+.product-card:hover .product-img::after{opacity:1;animation:conveyorMove 1s linear infinite}
+.product-info{padding:24px}
+.product-info h3{font-size:18px;font-weight:700;margin-bottom:8px;color:var(--dark)}
+.product-info p{font-size:14px;color:var(--secondary);line-height:1.6;margin-bottom:16px}
+.product-link{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--primary);transition:var(--transition)}
+.product-link:hover{gap:12px}
+
+/* WHY CHOOSE */
+.why-choose{background:var(--white)}
+.why-header{text-align:center;margin-bottom:60px}
+.why-header .section-label{justify-content:center}
+.why-header .section-desc{margin:0 auto}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.why-card{padding:36px 28px;border-radius:var(--radius-lg);border:1px solid var(--border);text-align:center;transition:var(--transition);position:relative;overflow:hidden}
+.why-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--primary);transform:scaleX(0);transition:var(--transition)}
+.why-card:hover::before{transform:scaleX(1)}
+.why-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.why-icon{width:64px;height:64px;margin:0 auto 20px;background:var(--primary-light);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--primary);transition:var(--transition)}
+.why-card:hover .why-icon{background:var(--primary);color:var(--white);transform:scale(1.1)}
+.why-card h3{font-size:16px;font-weight:700;margin-bottom:8px;color:var(--dark)}
+.why-card p{font-size:13px;color:var(--secondary);line-height:1.6}
+
+/* INDUSTRIES */
+.industries{background:linear-gradient(135deg,#0a1628,#1a2d4a);position:relative}
+.industries .section-label{color:#5bc0eb}.industries .section-label::before{background:#5bc0eb}
+.industries .section-title{color:var(--white)}
+.industries .section-desc{color:rgba(255,255,255,.6)}
+.industries-header{text-align:center;margin-bottom:60px}
+.industries-header .section-label{justify-content:center}
+.industries-header .section-desc{margin:0 auto}
+.industries-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.industry-card{padding:32px 24px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;display:flex;align-items:center;gap:16px;transition:var(--transition)}
+.industry-card:hover{background:rgba(12,141,208,.1);border-color:rgba(12,141,208,.3);transform:translateX(8px)}
+.industry-icon{width:48px;height:48px;background:rgba(12,141,208,.15);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;color:#5bc0eb;flex-shrink:0}
+.industry-card h3{font-size:15px;font-weight:600;color:rgba(255,255,255,.9)}
+
+/* CLIENTS */
+.clients{background:var(--light-bg);overflow:hidden}
+.clients-header{text-align:center;margin-bottom:48px}
+.clients-header .section-label{justify-content:center}
+.logo-scroll{overflow:hidden;position:relative;padding:20px 0}
+.logo-scroll::before,.logo-scroll::after{content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2}
+.logo-scroll::before{left:0;background:linear-gradient(90deg,var(--light-bg),transparent)}
+.logo-scroll::after{right:0;background:linear-gradient(-90deg,var(--light-bg),transparent)}
+.logo-track{display:flex;gap:48px;animation:scrollLogos 30s linear infinite;width:max-content}
+.client-logo{display:flex;align-items:center;justify-content:center;padding:20px 40px;background:var(--white);border:1px solid var(--border);border-radius:12px;min-width:200px;height:80px;font-family:var(--font-heading);font-size:15px;font-weight:700;color:var(--secondary);transition:var(--transition);white-space:nowrap}
+.client-logo:hover{border-color:var(--primary);color:var(--primary)}
+.client-logo-img{max-width:100%;max-height:100%;object-fit:contain}
+
+/* CASE STUDIES */
+.case-studies{background:var(--white)}
+.case-header{text-align:center;margin-bottom:60px}
+.case-header .section-label{justify-content:center}
+.case-header .section-desc{margin:0 auto}
+.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.case-card{border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);transition:var(--transition)}
+.case-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.case-img{height:180px;background:linear-gradient(135deg,var(--primary-light),#c8e0ef);display:flex;align-items:center;justify-content:center}
+.case-img i{font-size:40px;color:var(--primary);opacity:.5}
+.case-body{padding:24px}
+.case-industry{display:inline-block;padding:4px 12px;background:var(--primary-light);color:var(--primary);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border-radius:50px;margin-bottom:12px}
+.case-body h3{font-size:18px;font-weight:700;margin-bottom:12px;color:var(--dark)}
+.case-body p{font-size:14px;color:var(--secondary);line-height:1.6;margin-bottom:16px}
+.case-metrics{display:flex;gap:20px}
+.case-metric{text-align:center}
+.case-metric .value{font-family:var(--font-heading);font-size:22px;font-weight:800;color:var(--primary)}
+.case-metric .label{font-size:11px;color:var(--secondary)}
+
+/* BLOG */
+.blog{background:var(--light-bg)}
+.blog-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:20px}
+.blog-search{display:flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:10px 16px;width:300px}
+.blog-search input{border:none;outline:none;font-family:var(--font-body);font-size:14px;flex:1;background:transparent}
+.blog-search i{color:var(--secondary)}
+.blog-categories{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap}
+.blog-cat{padding:8px 18px;background:var(--white);border:1px solid var(--border);border-radius:50px;font-size:13px;font-weight:500;cursor:pointer;transition:var(--transition)}
+.blog-cat:hover,.blog-cat.active{background:var(--primary);color:var(--white);border-color:var(--primary)}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.blog-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);transition:var(--transition)}
+.blog-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.blog-thumb{height:180px;background:linear-gradient(135deg,#e8f4fb,#d0e8f5);display:flex;align-items:center;justify-content:center}
+.blog-thumb i{font-size:36px;color:var(--primary);opacity:.4}
+.blog-body{padding:24px}
+.blog-meta{display:flex;align-items:center;gap:12px;font-size:12px;color:var(--secondary);margin-bottom:12px}
+.blog-meta span{display:flex;align-items:center;gap:4px}
+.blog-body h3{font-size:17px;font-weight:700;margin-bottom:8px;color:var(--dark);line-height:1.3}
+.blog-body p{font-size:14px;color:var(--secondary);line-height:1.6}
+
+/* YOUTUBE */
+/* ==========================================
+  ADDED: ADAPTIVE YOUTUBE LAYOUT
+  ========================================== */
+.youtube-section {
+ background-color: var(--white);
+ border-top: 1px solid var(--border);
+}
+
+.youtube-featured {
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ gap: 24px;
+ margin-bottom: 32px;
+}
+
+/* Fluid Responsive Video Framework */
+.yt-main {
+ position: relative;
+ width: 100%;
+ padding-top: 56.25%; /* Fixed 16:9 Aspect Ratio Rule */
+ background: var(--darker);
+ border-radius: var(--radius-lg);
+ overflow: hidden;
+ box-shadow: var(--shadow);
+}
+
+.yt-main iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ border: 0;
+}
+
+/* Sidebar Custom Mechanics */
+.yt-sidebar {
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+ max-height: 480px;
+ overflow-y: auto;
+ padding-right: 4px;
+}
+
+.yt-thumb {
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ padding: 16px;
+ background: var(--light-bg);
+ border: 1px solid var(--border);
+ border-radius: var(--radius);
+ cursor: pointer;
+ transition: var(--transition);
+}
+
+.yt-thumb i {
+ font-size: 24px;
+ color: #ff0000;
+ transition: var(--transition);
+}
+
+.yt-thumb:hover {
+ transform: translateY(-2px);
+ border-color: var(--primary);
+ background: var(--primary-light);
+}
+
+.yt-thumb.active {
+ background: var(--primary-light);
+ border-color: var(--primary);
+ box-shadow: var(--shadow);
+}
+
+.yt-thumb-label {
+ font-size: 14px;
+ font-weight: 600;
+ color: var(--dark);
+ line-height: 1.4;
+}
+
+.yt-subscribe {
+ text-align: center;
+ margin-top: 32px;
+}
+
+/* Scrollbar Interface for Sidebar */
+.yt-sidebar::-webkit-scrollbar {
+ width: 4px;
+}
+.yt-sidebar::-webkit-scrollbar-thumb {
+ background: var(--secondary);
+ border-radius: 2px;
+}
+
+/* Responsiveness Override Rules */
+@media(max-width: 1024px) {
+ .youtube-featured {
+   grid-template-columns: 1fr; /* Stacks layout on tabs & phones */
+ }
+ .yt-sidebar {
+   max-height: none;
+ }
+}
+/* QUOTE FORM */
+.quote-section{background:linear-gradient(135deg,#0a1628,#1a2d4a);position:relative}
+.quote-section .section-label{color:#5bc0eb}.quote-section .section-label::before{background:#5bc0eb}
+.quote-section .section-title{color:var(--white)}.quote-section .section-desc{color:rgba(255,255,255,.6)}
+.quote-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+.quote-info h3{font-size:20px;color:var(--white);margin-bottom:16px}
+.quote-info p{font-size:15px;color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:32px}
+.quote-benefits{display:flex;flex-direction:column;gap:16px}
+.quote-benefit{display:flex;align-items:center;gap:14px;font-size:14px;color:rgba(255,255,255,.85);font-weight:500}
+.quote-benefit i{width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:rgba(12,141,208,.2);border-radius:8px;color:#5bc0eb;font-size:13px}
+.quote-form-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:36px;backdrop-filter:blur(12px)}
+.form-steps{display:flex;gap:8px;margin-bottom:32px}
+.form-step{flex:1;height:4px;background:rgba(255,255,255,.1);border-radius:2px;transition:var(--transition)}
+.form-step.active{background:var(--primary)}
+.form-step-content{display:none}.form-step-content.active{display:block}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-size:13px;font-weight:600;color:rgba(255,255,255,.8);margin-bottom:8px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);color:var(--white);font-family:var(--font-body);font-size:14px;outline:none;transition:var(--transition)}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,.3)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--primary);background:rgba(12,141,208,.08)}
+.form-group select option{background:var(--dark);color:var(--white)}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-nav{display:flex;justify-content:space-between;margin-top:24px}
+.form-nav .btn{font-size:13px;padding:12px 28px}
+.file-upload{border:2px dashed rgba(255,255,255,.15);border-radius:var(--radius);padding:24px;text-align:center;cursor:pointer;transition:var(--transition)}
+.file-upload:hover{border-color:var(--primary);background:rgba(12,141,208,.05)}
+.file-upload i{font-size:28px;color:rgba(255,255,255,.3);margin-bottom:8px}
+.file-upload p{font-size:13px;color:rgba(255,255,255,.5)}.file-upload input{display:none}
+
+/* FAQ */
+.faq{background:var(--light-bg)}
+.faq-header{text-align:center;margin-bottom:48px}.faq-header .section-label{justify-content:center}.faq-header .section-desc{margin:0 auto}
+.faq-list{max-width:800px;margin:0 auto}
+.faq-item{background:var(--white);border:1px solid var(--border);border-radius:12px;margin-bottom:12px;overflow:hidden;transition:var(--transition)}
+.faq-item.active{border-color:var(--primary)}
+.faq-question{padding:20px 24px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:var(--font-heading);font-size:16px;font-weight:600;color:var(--dark);transition:var(--transition)}
+.faq-question:hover{color:var(--primary)}.faq-question i{transition:var(--transition);color:var(--primary)}
+.faq-item.active .faq-question i{transform:rotate(180deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-answer-inner{padding:0 24px 20px;font-size:14px;color:var(--secondary);line-height:1.7}
+
+/* CONTACT */
+.contact{background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.contact-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px}
+.contact-card{padding:24px;background:var(--light-bg);border-radius:12px;transition:var(--transition)}
+.contact-card:hover{background:var(--primary-light)}
+.contact-card i{width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--primary);color:var(--white);border-radius:10px;font-size:16px;margin-bottom:12px}
+.contact-card h4{font-size:14px;font-weight:700;color:var(--dark);margin-bottom:6px}
+.contact-card p{font-size:13px;color:var(--secondary);line-height:1.5}.contact-card a{color:var(--primary);font-weight:500}
+.map-container{border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);height:100%;min-height:400px}
+.map-container iframe{width:100%;height:100%;border:0}
+
+/* FOOTER */
+.footer{background:var(--darker);padding:80px 0 0}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-brand p{font-size:14px;color:rgba(255,255,255,.5);line-height:1.7;margin:16px 0 24px}
+.footer-social{display:flex;gap:12px}
+.footer-social a{width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;color:rgba(255,255,255,.6);transition:var(--transition)}
+.footer-social a:hover{background:var(--primary);color:var(--white);border-color:var(--primary)}
+.footer h4{font-size:14px;font-weight:700;color:var(--white);margin-bottom:20px;letter-spacing:.5px}
+.footer-links a{display:block;font-size:14px;color:rgba(255,255,255,.5);padding:6px 0;transition:var(--transition)}
+.footer-links a:hover{color:var(--primary);padding-left:6px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding:24px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:13px;color:rgba(255,255,255,.4)}
+.footer-bottom a{color:rgba(255,255,255,.4);transition:var(--transition)}.footer-bottom a:hover{color:var(--primary)}
+
+/* FLOATING */
+.floating-btns{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:12px;z-index:900}
+.float-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--white);cursor:pointer;box-shadow:0 4px 20px rgba(0,0,0,.2);transition:var(--transition);border:none}
+.float-btn:hover{transform:scale(1.1)}
+.float-whatsapp{background:#25D366}.float-call{background:var(--primary)}.float-email{background:#EA4335}
+.float-top{background:var(--dark);opacity:0;visibility:hidden;transition:var(--transition)}.float-top.visible{opacity:1;visibility:visible}
+
+/* MODAL */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(4px)}
+.modal-overlay.active{display:flex}
+.modal{background:var(--white);border-radius:var(--radius-lg);max-width:700px;width:100%;max-height:85vh;overflow-y:auto;padding:40px;position:relative;animation:fadeInUp .4s ease}
+.modal-close{position:absolute;top:16px;right:16px;width:36px;height:36px;border:none;background:var(--light-bg);border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--secondary);transition:var(--transition)}
+.modal-close:hover{background:#fee;color:#e33}
+.modal h2{font-size:24px;margin-bottom:8px}.modal .modal-subtitle{font-size:14px;color:var(--secondary);margin-bottom:24px}
+.modal-features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
+.modal-feature{display:flex;align-items:center;gap:10px;font-size:14px;padding:10px;background:var(--light-bg);border-radius:8px}
+.modal-feature i{color:var(--primary)}.modal-cta{margin-top:24px}
+
+/* LEAD POPUP */
+.lead-popup{position:fixed;bottom:100px;left:24px;background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);padding:28px;max-width:360px;z-index:800;display:none;animation:fadeInUp .5s ease;border:1px solid var(--border)}
+.lead-popup.active{display:block}
+.lead-popup-close{position:absolute;top:12px;right:12px;background:none;border:none;font-size:16px;color:var(--secondary);cursor:pointer}
+.lead-popup h3{font-size:18px;margin-bottom:8px}
+.lead-popup p{font-size:13px;color:var(--secondary);margin-bottom:16px}
+.lead-popup input{width:100%;padding:10px 14px;border:1px solid var(--border);border-radius:var(--radius);font-family:var(--font-body);font-size:14px;margin-bottom:12px;outline:none}
+.lead-popup input:focus{border-color:var(--primary)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+.hero-content{grid-template-columns:1fr}.hero-visual{display:none}
+.about-grid{grid-template-columns:1fr;gap:40px}
+.products-grid{grid-template-columns:repeat(2,1fr)}
+.why-grid{grid-template-columns:repeat(2,1fr)}
+.industries-grid{grid-template-columns:repeat(2,1fr)}
+.cases-grid{grid-template-columns:repeat(2,1fr)}
+.blog-grid{grid-template-columns:repeat(2,1fr)}
+.quote-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:repeat(2,1fr)}
+.youtube-featured{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+.section{padding:60px 0}
+.nav-links,.header-cta .header-phone{display:none}.mobile-toggle{display:block}
+.hero-trust{grid-template-columns:1fr}
+.products-grid,.why-grid,.industries-grid,.cases-grid,.blog-grid{grid-template-columns:1fr}
+.blog-search{width:100%}.form-row{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr}.contact-cards{grid-template-columns:1fr}
+.mv-cards{grid-template-columns:1fr}.about-products{grid-template-columns:1fr}
+.modal-features{grid-template-columns:1fr}
+.hero h1{font-size:32px}
+.hero-btns{flex-direction:column}.hero-btns .btn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="TechMech Engineering" style="height: 70px; width:150px ;">
+    </a>
+    <nav class="nav-links">
+      <a href="about.html">About</a>
+      <div class="dropdown">
+        <a href="index.html#products">Products <i class="fas fa-chevron-down" style="font-size:10px;margin-left:4px"></i></a>
+        <div class="dropdown-menu">
+          <a href="index.html#products"><i class="fas fa-arrows-alt-h"></i> Flat Belt Conveyor</a>
+          <a href="index.html#products"><i class="fas fa-arrow-up"></i> Inclined Belt Conveyor</a>
+          <a href="index.html#products"><i class="fas fa-truck-loading"></i> Truck Loading Conveyor</a>
+          <a href="index.html#products"><i class="fas fa-circle-notch"></i> Roller Conveyors</a>
+          <a href="index.html#products"><i class="fas fa-sync-alt"></i> Screw Conveyor</a>
+          <a href="index.html#products"><i class="fas fa-layer-group"></i> Slat Chain Conveyor</a>
+          <a href="index.html#products"><i class="fas fa-border-all"></i> Wire Mesh Conveyor</a>
+          <a href="index.html#products"><i class="fas fa-arrow-up"></i> Bucket Elevator</a>
+          <a href="index.html#products"><i class="fas fa-wind"></i> Pneumatic Conveying System</a>
+          <a href="index.html#products"><i class="fas fa-drum"></i> Drum Filling Machine</a>
+          <a href="index.html#products"><i class="fas fa-industry"></i> Tank Fabrication Work</a>
+          <a href="index.html#products"><i class="fas fa-dolly"></i> MS Trolley, Pallet &amp; Grating</a>
+        </div>
+      </div>
+      <a href="index.html#blog">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:+919512696191" class="header-phone"><i class="fas fa-phone-alt"></i> +91 95126 96191</a>
+      <a href="#quote" class="btn btn-primary">Get Quote</a>
+    </div>
+    <button class="mobile-toggle" onclick="document.querySelector('.mobile-menu').classList.toggle('active')"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+<div class="mobile-menu">
+  <a href="index.html" onclick="this.parentElement.classList.remove('active')">Home</a>
+  <a href="about.html" onclick="this.parentElement.classList.remove('active')">About</a>
+  <a href="industries.html" onclick="this.parentElement.classList.remove('active')">Industries</a>
+  <a href="index.html#blog" onclick="this.parentElement.classList.remove('active')">Blog</a>
+  <a href="faq.html" onclick="this.parentElement.classList.remove('active')">FAQ</a>
+  <a href="contact.html" onclick="this.parentElement.classList.remove('active')">Contact</a>
+  <a href="quote.html" onclick="this.parentElement.classList.remove('active')" style="color:var(--primary);font-weight:700">Request Quote</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-conveyor-line"></div>
+  <div class="hero-conveyor-line"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge"><i class="fas fa-circle"></i> 10+ Years of Engineering Excellence</div>
+      <h1>Engineering Efficient <span>Material Handling</span> Solutions</h1>
+      <p class="hero-sub">Custom Designed Belt, Roller, Screw &amp; Slat Conveyor Systems Built For Industrial Performance. Trusted by leading manufacturers across India.</p>
+      <div class="hero-btns">
+        <a href="#quote" class="btn btn-primary"><i class="fas fa-file-invoice"></i> Request Quote</a>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-calendar-alt"></i> Schedule Consultation</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><i class="fas fa-award"></i><span>10+ Years Industry Experience</span></div>
+        <div class="trust-item"><i class="fas fa-tools"></i><span>Installation &amp; Commissioning Support</span></div>
+        <div class="trust-item"><i class="fas fa-drafting-compass"></i><span>Custom Engineering Solutions</span></div>
+        <div class="trust-item"><i class="fas fa-map-marked-alt"></i><span>Pan India Service Network</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-visual-card">
+        <div class="hero-stats">
+          <div class="stat-card"><div class="stat-number" data-count="500">0</div><div class="stat-label">Projects Delivered</div></div>
+          <div class="stat-card"><div class="stat-number" data-count="10">0</div><div class="stat-label">Years Experience</div></div>
+          <div class="stat-card"><div class="stat-number" data-count="50">0</div><div class="stat-label">Industry Clients</div></div>
+          <div class="stat-card"><div class="stat-number" data-count="12">0</div><div class="stat-label">Product Lines</div></div>
+        </div>
+        <div class="hero-equipment">
+          <h4>Our Core Systems</h4>
+          <div class="equipment-tags">
+            <span class="equipment-tag">Belt Conveyors</span>
+            <span class="equipment-tag">Roller Conveyors</span>
+            <span class="equipment-tag">Screw Conveyors</span>
+            <span class="equipment-tag">Slat Chain Conveyors</span>
+            <span class="equipment-tag">Bucket Elevators</span>
+            <span class="equipment-tag">Pneumatic Systems</span>
+            <span class="equipment-tag">Drum Filling Machines</span>
+            <span class="equipment-tag">Tank Fabrication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image reveal">
+        <img src="images/about.png" alt="TechMech Engineering Facility" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);">
+        <div class="about-experience"><div class="number">10+</div><div class="label">Years Experience</div></div>
+      </div>
+      <div class="about-content reveal">
+        <div class="section-label">About TechMech Engineering</div>
+        <h2 class="section-title">Building India's Material Handling Future</h2>
+        <p>TechMech Engineering is a growing and reliable name in material handling and conveying systems based in Vapi, Gujarat. Backed by 10+ years of industry experience and 4+ years of company expertise, we specialize in designing and manufacturing high-performance conveying solutions.</p>
+        <p>Our focus is on delivering durable, cost-effective and high-performance solutions that improve operational efficiency and productivity for industries across India.</p>
+        <div class="about-products">
+          <div class="about-product-item"><i class="fas fa-check-circle"></i> Flat Belt Conveyors</div>
+          <div class="about-product-item"><i class="fas fa-check-circle"></i> Inclined Belt Conveyors</div>
+          <div class="about-product-item"><i class="fas fa-check-circle"></i> Truck Loading Conveyors</div>
+          <div class="about-product-item"><i class="fas fa-check-circle"></i> Roller Conveyors</div>
+          <div class="about-product-item"><i class="fas fa-check-circle"></i> Screw Conveyors</div>
+          <div class="about-product-item"><i class="fas fa-check-circle"></i> Slat Chain Conveyors</div>
+          <div class="about-product-item"><i class="fas fa-check-circle"></i> Wire Mesh Conveyors</div>
+          <div class="about-product-item"><i class="fas fa-check-circle"></i> Bucket Elevators</div>
+          <div class="about-product-item"><i class="fas fa-check-circle"></i> Pneumatic Conveying Systems</div>
+          <div class="about-product-item"><i class="fas fa-check-circle"></i> Drum Filling Machines</div>
+          <div class="about-product-item"><i class="fas fa-check-circle"></i> Tank Fabrication</div>
+          <div class="about-product-item"><i class="fas fa-check-circle"></i> MS Trolley, Pallet &amp; Grating</div>
+        </div>
+        <div class="mv-cards">
+          <div class="mv-card"><h4><i class="fas fa-bullseye"></i> Our Mission</h4><p>To provide innovative, efficient and customized material handling solutions that help industries streamline operations and maximize productivity.</p></div>
+          <div class="mv-card"><h4><i class="fas fa-eye"></i> Our Vision</h4><p>To become a leading and trusted brand in material handling engineering through technical excellence, innovation and customer-centric solutions.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section products">
+  <div class="container">
+    <div class="products-header reveal">
+      <div class="section-label">Our Products</div>
+      <h2 class="section-title">Engineered For Industrial Performance</h2>
+      <p class="section-desc">Comprehensive range of material handling and conveying systems designed for maximum efficiency, durability and uptime.</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal" onclick="openProductModal(0)"><div class="product-img"><img src="images/product_1.png" alt="FLAT BELT CONVEYORS" style="width:100%;height:100%;object-fit:contain;"></div><div class="product-info"><h3>Flat Belt Conveyor</h3><p>PVC/PU/Rubber belt conveyors with variable speed, customizable load capacity up to 200 kg/m, and adjustable frame heights.</p><span class="product-link">View Details <i class="fas fa-arrow-right"></i></span></div></div>
+      <div class="product-card reveal" onclick="openProductModal(1)"><div class="product-img"><img src="images/product_2.png" alt="INCLINED BELT CONVEYOR" style="width:100%;height:100%;object-fit:contain;"></div><div class="product-info"><h3>Inclined Belt Conveyor</h3><p>Angles from 15° to 45° (up to 60° with cleats), ideal for elevation changes in production lines with cleated belt options.</p><span class="product-link">View Details <i class="fas fa-arrow-right"></i></span></div></div>
+      <div class="product-card reveal" onclick="openProductModal(2)"><div class="product-img"><img src="images/product_3.png" alt="TRUCK LOADING CONVEYOR" style="width:100%;height:100%;object-fit:contain;"></div><div class="product-info"><h3>Truck Loading Conveyor</h3><p>Height-adjustable from 800 mm to 3000 mm with variable inclination angles, designed for efficient loading and unloading operations.</p><span class="product-link">View Details <i class="fas fa-arrow-right"></i></span></div></div>
+      <div class="product-card reveal" onclick="openProductModal(3)"><div class="product-img"><img src="images/product_4.png" alt="FLAT BELT CONVEYORS" style="width:100%;height:100%;object-fit:contain;"></div><div class="product-info"><h3>Roller Conveyors</h3><p>Gravity and powered roller conveyors with MS/SS/PVC rollers, PLC/VFD control options, and load capacity up to 300 kg/m.</p><span class="product-link">View Details <i class="fas fa-arrow-right"></i></span></div></div>
+      <div class="product-card reveal" onclick="openProductModal(4)"><div class="product-img"><img src="images/product_5.png" alt="SCREW CONVEYOR" style="width:100%;height:100%;object-fit:contain;"></div><div class="product-info"><h3>Screw Conveyor</h3><p>Precision-engineered screw conveyors for powders and granules with equal/variable pitch, up to 100 TPH capacity.</p><span class="product-link">View Details <i class="fas fa-arrow-right"></i></span></div></div>
+      <div class="product-card reveal" onclick="openProductModal(5)"><div class="product-img"><img src="images/product_6.png" alt="SLAT CHAIN CONVEYOR" style="width:100%;height:100%;object-fit:contain;"></div><div class="product-info"><h3>Slat Chain Conveyor</h3><p>Heavy-duty slat conveyors with MS/SS/Plastic slats, roller chain drive, and load capacity up to 500 kg/m for demanding environments.</p><span class="product-link">View Details <i class="fas fa-arrow-right"></i></span></div></div>
+      <div class="product-card reveal" onclick="openProductModal(6)"><div class="product-img"><img src="images/product_7.png" alt="Wire Mesh Conveyor" style="width:100%;height:100%;object-fit:contain;"></div><div class="product-info"><h3>Wire Mesh Conveyor</h3><p>SS wire mesh belt conveyors operating at temperatures up to 800°C, ideal for baking, drying, and heat treatment processes.</p><span class="product-link">View Details <i class="fas fa-arrow-right"></i></span></div></div>
+      <div class="product-card reveal" onclick="openProductModal(7)"><div class="product-img"><img src="images/product_8.png" alt="Bucket Elevator" style="width:100%;height:100%;object-fit:contain;"></div><div class="product-info"><h3>Bucket Elevator</h3><p>Vertical lifting systems with bucket capacity 1L to 20L, system capacity up to 200 TPH, and heights up to 30 meters.</p><span class="product-link">View Details <i class="fas fa-arrow-right"></i></span></div></div>
+      <div class="product-card reveal" onclick="openProductModal(8)"><div class="product-img"><img src="images/pneumatic-conveying.png" alt="Pneumatic Conveying System" style="width:100%;height:100%;object-fit:contain;"></div><div class="product-info"><h3>Pneumatic Conveying System</h3><p>Complete pneumatic conveying solutions with distances up to 150m, heating up to 200°C and cooling down to 10°C.</p><span class="product-link">View Details <i class="fas fa-arrow-right"></i></span></div></div>
+      <div class="product-card reveal" onclick="openProductModal(9)"><div class="product-img"><img src="images/drum-filling-machine.png" alt="Drum Filling Machine" style="width:100%;height:100%;object-fit:contain;"></div><div class="product-info"><h3>Drum Filling Machine</h3><p>Semi-automatic and automatic drum filling systems, 50L to 1000L capacity with PLC-HMI control and ±0.1% accuracy.</p><span class="product-link">View Details <i class="fas fa-arrow-right"></i></span></div></div>
+      <div class="product-card reveal" onclick="openProductModal(10)"><div class="product-img"><img src="images/product_9.png" alt="Tank Fabrication Work" style="width:100%;height:100%;object-fit:contain;"></div><div class="product-info"><h3>Tank Fabrication Work</h3><p>Custom tanks from 100L to 5000+ Liters in MS, SS304, SS316 and special alloys with TIG/MIG/ARC welding.</p><span class="product-link">View Details <i class="fas fa-arrow-right"></i></span></div></div>
+      <div class="product-card reveal" onclick="openProductModal(11)"><div class="product-img"><img src="images/ms-trolley-pallet-grating.png" alt="MS Trolley, Pallet & Grating" style="width:100%;height:100%;object-fit:contain;"></div><div class="product-info"><h3>MS Trolley, Pallet &amp; Grating</h3><p>Platform trolleys, cage trolleys, heavy-duty MS pallets, stackable pallets, welded and galvanized grating solutions.</p><span class="product-link">View Details <i class="fas fa-arrow-right"></i></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section id="why-choose" class="section why-choose">
+  <div class="container">
+    <div class="why-header reveal">
+      <div class="section-label">Why Choose Us</div>
+      <h2 class="section-title">The TechMech Advantage</h2>
+      <p class="section-desc">What sets us apart in the material handling industry — a combination of experience, engineering excellence and customer commitment.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="why-icon"><i class="fas fa-award"></i></div><h3>10+ Years Experience</h3><p>Deep industry knowledge gained through a decade of solving complex material handling challenges.</p></div>
+      <div class="why-card reveal"><div class="why-icon"><i class="fas fa-drafting-compass"></i></div><h3>Customized Engineering</h3><p>Every solution is tailored to your specific application, facility layout and production goals.</p></div>
+      <div class="why-card reveal"><div class="why-icon"><i class="fas fa-industry"></i></div><h3>In-house Manufacturing</h3><p>Complete control over quality with our own manufacturing facility and skilled workforce.</p></div>
+      <div class="why-card reveal"><div class="why-icon"><i class="fas fa-shield-alt"></i></div><h3>Quality Assurance</h3><p>Rigorous testing and quality checks at every stage from design to final commissioning.</p></div>
+      <div class="why-card reveal"><div class="why-icon"><i class="fas fa-clock"></i></div><h3>Timely Delivery</h3><p>Committed to project timelines with efficient project management and execution.</p></div>
+      <div class="why-card reveal"><div class="why-icon"><i class="fas fa-wrench"></i></div><h3>Installation Support</h3><p>Complete installation, commissioning and training support at your facility.</p></div>
+      <div class="why-card reveal"><div class="why-icon"><i class="fas fa-headset"></i></div><h3>Maintenance Assistance</h3><p>Ongoing maintenance support, spare parts supply and technical consultation.</p></div>
+      <div class="why-card reveal"><div class="why-icon"><i class="fas fa-rupee-sign"></i></div><h3>Cost Effective Solutions</h3><p>Optimized designs that deliver maximum performance within your budget constraints.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries" class="section industries">
+  <div class="container">
+    <div class="industries-header reveal">
+      <div class="section-label">Industries We Serve</div>
+      <h2 class="section-title">Powering Operations Across Sectors</h2>
+      <p class="section-desc">Our conveying and material handling solutions serve diverse industries with specialized requirements and demanding conditions.</p>
+    </div>
+    <div class="industries-grid">
+      <div class="industry-card reveal"><div class="industry-icon"><i class="fas fa-atom"></i></div><h3>Integrated Chemical Manufacturing</h3></div>
+      <div class="industry-card reveal"><div class="industry-icon"><i class="fas fa-mountain"></i></div><h3>Aluminium Manufacturing</h3></div>
+      <div class="industry-card reveal"><div class="industry-icon"><i class="fas fa-copper"></i></div><h3>Copper Manufacturing</h3></div>
+      <div class="industry-card reveal"><div class="industry-icon"><i class="fas fa-flask"></i></div><h3>Chemical Manufacturing</h3></div>
+      <div class="industry-card reveal"><div class="industry-icon"><i class="fas fa-vial"></i></div><h3>Plasticizers &amp; Polymer Compounds Manufacturing</h3></div>
+      <div class="industry-card reveal"><div class="industry-icon"><i class="fas fa-heartbeat"></i></div><h3>Global Medical Device Manufacturing</h3></div>
+      <div class="industry-card reveal"><div class="industry-icon"><i class="fas fa-plug"></i></div><h3>Electrical Construction Material Manufacturing</h3></div>
+      <div class="industry-card reveal"><div class="industry-icon"><i class="fas fa-scroll"></i></div><h3>Technical Textile Manufacturing</h3></div>
+      <div class="industry-card reveal"><div class="industry-icon"><i class="fas fa-leaf"></i></div><h3>Diversified Natural Resource Companies</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section id="clients" class="section clients">
+  <div class="container">
+    <div class="clients-header reveal">
+      <div class="section-label">Our Clients</div>
+      <h2 class="section-title">Trusted By Industry Leaders</h2>
+    </div>
+  </div>
+  <div class="logo-scroll">
+    <div class="logo-track">
+      <div class="client-logo"><img src="images/logo_1.png" alt="Aditya Birla / Hindalco" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_2.png" alt="Atul Limited" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_3.png" alt="KLJ" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_4.png" alt="Anchor by Panasonic" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_5.png" alt="Meril" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_6.png" alt="EMIL - Essel Mining" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_7.png" alt="IMP Powers Ltd" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_8.png" alt="Kusumgar Corporates" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_1.png" alt="Aditya Birla / Hindalco" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_2.png" alt="Atul Limited" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_3.png" alt="KLJ" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_4.png" alt="Anchor by Panasonic" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_5.png" alt="Meril" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_6.png" alt="EMIL - Essel Mining" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_7.png" alt="IMP Powers Ltd" class="client-logo-img"></div>
+      <div class="client-logo"><img src="images/logo_8.png" alt="Kusumgar Corporates" class="client-logo-img"></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="section blog">
+  <div class="container">
+    <div class="blog-header reveal">
+      <div><div class="section-label">Insights &amp; Resources</div><h2 class="section-title">Engineering Knowledge Hub</h2></div>
+      <div class="blog-search"><i class="fas fa-search"></i><input type="text" placeholder="Search articles..." id="blogSearch" onkeyup="filterBlog()"></div>
+    </div>
+    <div class="blog-categories">
+      <span class="blog-cat active" onclick="filterCategory(this,'all')">All Posts</span>
+      <span class="blog-cat" onclick="filterCategory(this,'material-handling')">Material Handling</span>
+      <span class="blog-cat" onclick="filterCategory(this,'conveyor-systems')">Conveyor Systems</span>
+      <span class="blog-cat" onclick="filterCategory(this,'automation')">Industrial Automation</span>
+      <span class="blog-cat" onclick="filterCategory(this,'efficiency')">Manufacturing Efficiency</span>
+      <span class="blog-cat" onclick="filterCategory(this,'maintenance')">Maintenance Tips</span>
+      <span class="blog-cat" onclick="filterCategory(this,'trends')">Industry Trends</span>
+    </div>
+    <div class="blog-grid" id="blogGrid">
+      <div class="blog-card reveal" data-category="conveyor-systems"><div class="blog-thumb"><i class="fas fa-arrows-alt-h"></i></div><div class="blog-body"><div class="blog-meta"><span><i class="far fa-calendar"></i> Jun 15, 2025</span><span><i class="far fa-clock"></i> 5 min read</span></div><h3>How to Choose the Right Belt Conveyor for Your Application</h3><p>A comprehensive guide to selecting belt conveyors based on material type, throughput requirements and environmental conditions.</p></div></div>
+      <div class="blog-card reveal" data-category="maintenance"><div class="blog-thumb"><i class="fas fa-wrench"></i></div><div class="blog-body"><div class="blog-meta"><span><i class="far fa-calendar"></i> Jun 8, 2025</span><span><i class="far fa-clock"></i> 4 min read</span></div><h3>Preventive Maintenance Checklist for Roller Conveyors</h3><p>Essential maintenance practices to extend conveyor lifespan, reduce downtime and prevent costly breakdowns.</p></div></div>
+      <div class="blog-card reveal" data-category="automation"><div class="blog-thumb"><i class="fas fa-robot"></i></div><div class="blog-body"><div class="blog-meta"><span><i class="far fa-calendar"></i> May 28, 2025</span><span><i class="far fa-clock"></i> 6 min read</span></div><h3>The Future of Industrial Automation in Material Handling</h3><p>Exploring IoT integration, smart sensors and AI-driven optimization in modern conveying systems.</p></div></div>
+      <div class="blog-card reveal" data-category="efficiency"><div class="blog-thumb"><i class="fas fa-chart-line"></i></div><div class="blog-body"><div class="blog-meta"><span><i class="far fa-calendar"></i> May 20, 2025</span><span><i class="far fa-clock"></i> 7 min read</span></div><h3>5 Ways to Maximize Conveyor System Efficiency</h3><p>Practical strategies to improve throughput, reduce energy consumption and optimize your material handling operations.</p></div></div>
+      <div class="blog-card reveal" data-category="material-handling"><div class="blog-thumb"><i class="fas fa-cogs"></i></div><div class="blog-body"><div class="blog-meta"><span><i class="far fa-calendar"></i> May 12, 2025</span><span><i class="far fa-clock"></i> 5 min read</span></div><h3>Screw vs Belt Conveyors: Which is Right for Your Material?</h3><p>Comparing the two most popular conveyor types across key parameters like material compatibility, cost and maintenance.</p></div></div>
+      <div class="blog-card reveal" data-category="trends"><div class="blog-thumb"><i class="fas fa-globe"></i></div><div class="blog-body"><div class="blog-meta"><span><i class="far fa-calendar"></i> Apr 30, 2025</span><span><i class="far fa-clock"></i> 8 min read</span></div><h3>Material Handling Trends Shaping Indian Manufacturing in 2025</h3><p>Key trends including modular systems, sustainable design and digital twin technology transforming the industry.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- YOUTUBE -->
+<section id="youtube" class="section youtube-section" style="padding: 60px 0; background-color: #ffffff;">
+  <div class="container">
+    <div class="youtube-header" style="margin-bottom: 40px; text-align: left;">
+      <div class="section-label">Video Resources</div>
+      <h2 class="section-title">Learn From Our Engineering Experts</h2>
+      <p class="section-desc">Watch product demonstrations, installation guides and engineering insights from the TechMech team.</p>
+    </div>
+
+    <div class="youtube-featured">
+      <div class="yt-main">
+        <iframe id="featuredFrame"
+          src="https://www.youtube.com/embed/KmxRfLqYjeQ?si=Fd1ZWXZArsZbtnhO"
+          title="YouTube video player"
+          width="560" height="315"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="yt-sidebar" id="ytSidebar"></div>
+    </div>
+
+    <div class="yt-subscribe" style="text-align: center; margin-top: 32px;">
+      <a href="https://youtube.com/@techmechengineering-1?sub_confirmation=1" target="_blank"
+         style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; background-color: #2c2c2c; color: #ffffff; text-decoration: none; font-weight: bold; font-size: 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: background 0.3s;">
+         <i class="fab fa-youtube" style="color:#ff0000;font-size:18px;"></i> SUBSCRIBE TO OUR CHANNEL
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+// --- TechMech YouTube Video Feed ---
+// Channel: @techmechengineering-1 | ID: UCQFIIfSFntGAUz0EZUdsVgA
+// Videos fetched from YouTube RSS feed — works without PHP
+(function initYouTubeSection() {
+  var videos = [
+    {id:'KmxRfLqYjeQ', title:'TechMech Engineering - Conveyor Solutions', date:'Latest', thumb:'https://i.ytimg.com/vi/KmxRfLqYjeQ/hqdefault.jpg'},
+    {id:'0QjaPs3cJGA', title:'SS Packing Conveyors — Efficient Product Handling & Packaging', date:'Jun 23, 2026', thumb:'https://i1.ytimg.com/vi/0QjaPs3cJGA/hqdefault.jpg'},
+    {id:'kNnnrBMrolc', title:'Paper Bundle Feeding Roller Conveyor Table', date:'May 12, 2026', thumb:'https://i4.ytimg.com/vi/kNnnrBMrolc/hqdefault.jpg'},
+    {id:'fEwxzve1USs', title:'Inclined Belt Conveyor Manufacturer — Heavy Duty', date:'May 8, 2026', thumb:'https://i3.ytimg.com/vi/fEwxzve1USs/hqdefault.jpg'},
+    {id:'umUJMQdalDs', title:'Screw Flights for Conveyors — Pressed MS / SS', date:'Apr 29, 2026', thumb:'https://i2.ytimg.com/vi/umUJMQdalDs/hqdefault.jpg'},
+    {id:'v4Y85xf1ASA', title:'PVC Belt Conveyor — 12 Meter, 900mm Width', date:'Apr 24, 2026', thumb:'https://i3.ytimg.com/vi/v4Y85xf1ASA/hqdefault.jpg'},
+    {id:'n707KEuxoMI', title:'Industrial Conveyor Manufacturing', date:'Apr 23, 2026', thumb:'https://i3.ytimg.com/vi/n707KEuxoMI/hqdefault.jpg'},
+    {id:'T4w5u_IrI-Q', title:'PVC Belt Conveyor — 12m Length, 900mm Width', date:'Apr 17, 2026', thumb:'https://i1.ytimg.com/vi/T4w5u_IrI-Q/hqdefault.jpg'},
+    {id:'w6ulF8jaI2I', title:'BNI Meeting', date:'Apr 17, 2026', thumb:'https://i4.ytimg.com/vi/w6ulF8jaI2I/hqdefault.jpg'},
+    {id:'jMSGGPN9eLg', title:'Customised Material Handling Trolleys for Textile Industry', date:'Apr 13, 2026', thumb:'https://i2.ytimg.com/vi/jMSGGPN9eLg/hqdefault.jpg'},
+    {id:'f8xL8YTHY7w', title:'Z-Type Cleated Belt Conveyor with Vibro Hopper Installation', date:'Apr 12, 2026', thumb:'https://i2.ytimg.com/vi/f8xL8YTHY7w/hqdefault.jpg'}
+  ];
+
+  var sidebar = document.getElementById('ytSidebar');
+  if (!sidebar) return;
+
+  var html = '';
+  videos.forEach(function(v, i) {
+    var isFirst = i === 0;
+    var bg = isFirst ? 'var(--primary-light)' : 'var(--light-bg)';
+    var border = isFirst ? 'var(--primary)' : 'var(--border)';
+    var activeClass = isFirst ? ' active' : '';
+    html += '<div class="yt-thumb' + activeClass + '" onclick="changeVideo(\'' + v.id + '\', this)">';
+    html += '<img src="' + v.thumb + '" alt="' + v.title.replace(/"/g, '&quot;') + '" style="width:80px;height:60px;object-fit:cover;border-radius:6px;flex-shrink:0;">';
+    html += '<div style="flex:1;min-width:0;">';
+    html += '<span class="yt-thumb-label">' + v.title + '</span>';
+    html += '<div style="font-size:11px;color:var(--secondary);margin-top:4px;">' + v.date + '</div>';
+    html += '</div></div>';
+  });
+  sidebar.innerHTML = html;
+})();
+
+function changeVideo(videoId, element) {
+  document.getElementById('featuredFrame').src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&si=Fd1ZWXZArsZbtnhO';
+  document.querySelectorAll('.yt-thumb').forEach(function(thumb) {
+    thumb.style.background = 'var(--light-bg)';
+    thumb.style.borderColor = 'var(--border)';
+    thumb.classList.remove('active');
+  });
+  element.style.background = 'var(--primary-light)';
+  element.style.borderColor = 'var(--primary)';
+  element.classList.add('active');
+}
+</script>
+<!-- QUOTE FORM -->
+<section id="quote" class="section quote-section">
+  <div class="container">
+    <div class="quote-grid">
+      <div class="quote-info reveal">
+        <div class="section-label">Request a Quote</div>
+        <h2 class="section-title">Get Custom Solution Proposal</h2>
+        <p>Tell us about your material handling requirements and our engineering team will design a solution tailored to your needs. We respond to all inquiries within 24 hours.</p>
+        <div class="quote-benefits">
+          <div class="quote-benefit"><i class="fas fa-check"></i> Free technical consultation</div>
+          <div class="quote-benefit"><i class="fas fa-check"></i> Custom engineering design</div>
+          <div class="quote-benefit"><i class="fas fa-check"></i> Competitive pricing</div>
+          <div class="quote-benefit"><i class="fas fa-check"></i> Detailed project proposal</div>
+          <div class="quote-benefit"><i class="fas fa-check"></i> Installation &amp; commissioning included</div>
+          <div class="quote-benefit"><i class="fas fa-check"></i> After-sales support guaranteed</div>
+        </div>
+      </div>
+      <div class="quote-form-card reveal">
+        <div class="form-steps"><div class="form-step active" data-step="1"></div><div class="form-step" data-step="2"></div><div class="form-step" data-step="3"></div></div>
+        <form id="quoteForm" onsubmit="return submitQuote(event)">
+          <div class="form-step-content active" data-step="1">
+            <h3 style="color:white;font-size:18px;margin-bottom:20px">Your Information</h3>
+            <div class="form-row"><div class="form-group"><label>Full Name *</label><input type="text" name="name" placeholder="Your name" required></div><div class="form-group"><label>Company Name *</label><input type="text" name="company" placeholder="Company name" required></div></div>
+            <div class="form-row"><div class="form-group"><label>Email *</label><input type="email" name="email" placeholder="Email address" required></div><div class="form-group"><label>Phone *</label><input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" required></div></div>
+            <div class="form-group"><label>Industry</label><select name="industry"><option value="">Select your industry</option><option>Integrated Chemical Manufacturing</option><option>Aluminium Manufacturing</option><option>Copper Manufacturing</option><option>Chemical Manufacturing</option><option>Plasticizers & Polymer Compounds Manufacturing</option><option>Global Medical Device Manufacturing</option><option>Electrical Construction Material Manufacturing</option><option>Technical Textile Manufacturing</option><option>Diversified Natural Resource Companies</option><option>Other</option></select></div>
+            <div class="form-nav"><span></span><button type="button" class="btn btn-primary" onclick="nextStep(2)">Next <i class="fas fa-arrow-right"></i></button></div>
+          </div>
+          <div class="form-step-content" data-step="2">
+            <h3 style="color:white;font-size:18px;margin-bottom:20px">Project Requirements</h3>
+            <div class="form-group"><label>Product Requirement *</label><select name="product" required><option value="">Select product type</option><option>Flat Belt Conveyor</option><option>Inclined Belt Conveyor</option><option>Truck Loading Conveyor</option><option>Roller Conveyor</option><option>Screw Conveyor</option><option>Slat Chain Conveyor</option><option>Wire Mesh Conveyor</option><option>Bucket Elevator</option><option>Pneumatic Conveying System</option><option>Drum Filling Machine</option><option>Tank Fabrication Work</option><option>MS Trolley, Pallet & Grating</option></select></div>
+            <div class="form-group"><label>Project Description</label><textarea name="description" placeholder="Describe your requirements, material type, capacity needs, facility details..."></textarea></div>
+            <div class="form-nav"><button type="button" class="btn btn-outline" onclick="nextStep(1)"><i class="fas fa-arrow-left"></i> Back</button><button type="button" class="btn btn-primary" onclick="nextStep(3)">Next <i class="fas fa-arrow-right"></i></button></div>
+          </div>
+          <div class="form-step-content" data-step="3">
+            <h3 style="color:white;font-size:18px;margin-bottom:20px">Upload &amp; Submit</h3>
+            <div class="form-group"><label>Upload Drawing / PDF (Optional)</label><label class="file-upload" for="fileInput"><i class="fas fa-cloud-upload-alt"></i><p>Click to upload or drag &amp; drop<br><small>PDF, DWG, DXF, IMG (Max 10MB)</small></p><input type="file" name="drawing" id="fileInput" accept=".pdf,.dwg,.dxf,.jpg,.png"></label></div>
+            <div class="form-group"><label>Preferred Contact Time</label><select name="contact_time"><option>Anytime</option><option>Morning (9 AM - 12 PM)</option><option>Afternoon (12 PM - 4 PM)</option><option>Evening (4 PM - 7 PM)</option></select></div>
+            <div class="form-nav"><button type="button" class="btn btn-outline" onclick="nextStep(2)"><i class="fas fa-arrow-left"></i> Back</button><button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Submit Inquiry</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section faq">
+  <div class="container">
+    <div class="faq-header reveal"><div class="section-label">FAQ</div><h2 class="section-title">Frequently Asked Questions</h2><p class="section-desc">Find answers to common questions about our products, services, and processes.</p></div>
+    <div class="faq-list">
+      <div class="faq-item active"><div class="faq-question" onclick="toggleFaq(this)">What types of conveyor systems do you manufacture? <i class="fas fa-chevron-down"></i></div><div class="faq-answer" style="max-height:200px"><div class="faq-answer-inner">We manufacture a comprehensive range including flat belt conveyors, inclined belt conveyors, truck loading conveyors, roller conveyors (gravity and powered), screw conveyors, slat chain conveyors, wire mesh conveyors, bucket elevators, pneumatic conveying systems, drum filling machines, tank fabrication, and MS trolleys, pallets &amp; grating. All systems are custom-engineered to meet specific application requirements.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Do you provide custom engineering solutions? <i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner">Yes, custom engineering is our core strength. Every project begins with understanding your specific material characteristics, throughput requirements, facility layout, and operational goals. Our engineering team designs solutions tailored to your exact needs.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What is the typical project timeline? <i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner">Project timelines vary based on complexity. Standard conveyor systems typically take 4-6 weeks from order confirmation. Complex integrated systems may take 8-12 weeks. We provide detailed timelines during the proposal stage and are committed to on-time delivery.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Do you provide installation and commissioning support? <i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner">Yes, we provide complete end-to-end support including site survey, installation, commissioning, operator training, and post-installation maintenance support. Our team works across India to ensure smooth project execution.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">Which industries do you serve? <i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner">We serve aluminium and copper manufacturing, chemical plants, polymer industries, medical device manufacturing, electrical material manufacturing, technical textile, natural resource companies, and many more. Our solutions are adapted to meet industry-specific requirements and standards.</div></div></div>
+      <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">What after-sales support do you provide? <i class="fas fa-chevron-down"></i></div><div class="faq-answer"><div class="faq-answer-inner">We provide comprehensive after-sales support including maintenance contracts, spare parts supply, emergency repair services, and technical consultation. Our goal is to ensure maximum uptime and longevity of all installed systems.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <div class="reveal" style="margin-bottom:48px"><div class="section-label">Get In Touch</div><h2 class="section-title">Contact TechMech Engineering</h2></div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-cards">
+          <div class="contact-card"><i class="fas fa-phone-alt"></i><h4>Call Us</h4><p><a href="tel:+919512696191">+91 95126 96191</a><br><a href="tel:+918460640743">+91 84606 40743</a></p></div>
+          <div class="contact-card"><i class="fas fa-envelope"></i><h4>Email Us</h4><p><a href="mailto:techmechengineering1@gmail.com">techmechengineering1<br>@gmail.com</a></p></div>
+          <div class="contact-card"><i class="fas fa-map-marker-alt"></i><h4>Office Address</h4><p>Plot No. 584/Pakki 1, Gala No. 3, Near Canal, 4th Phase GIDC, Vapi, Gujarat</p></div>
+          <div class="contact-card"><i class="fas fa-building"></i><h4>Registered Address</h4><p>A-201 Mangalam Heights, Near Lakeview Residency, Dungra, Vapi, Gujarat</p></div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="https://wa.me/919512696191" target="_blank" class="btn" style="background:#25D366;color:white"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="tel:+919512696191" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+          <a href="mailto:techmechengineering1@gmail.com" class="btn btn-dark"><i class="fas fa-envelope"></i> Email</a>
+          <a href="http://www.techmechengineering.co.in" target="_blank" class="btn" style="background:var(--secondary);color:white"><i class="fas fa-globe"></i> Website</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.123!2d72.95777!3d20.36186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e6b1d5b3b8d%3A0x7a3b8b8e8e8e8e8e!2s4th%20Phase%20GIDC%2C%20Vapi!5e0!3m2!1sen!2sin!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div style="text-align:center;padding:16px;background:var(--light-bg);border-radius:0 0 var(--radius-lg) var(--radius-lg);border:1px solid var(--border);border-top:none;margin-top:-1px;">
+          <a href="https://www.google.com/maps?q=20.361855,72.959961" target="_blank" style="color:var(--primary);font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;">
+            <i class="fas fa-map-marker-alt"></i> View Larger Map on Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="TechMech Engineering" style="height: 60px; width: 150px;"></a>
+        <p>Engineering efficient material handling solutions for industries across India. 10+ years of experience in designing and manufacturing conveyor systems.</p>
+        <div class="footer-social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="https://youtube.com/@techmechengineering-1" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+      </div>
+      <div><h4>Products</h4><div class="footer-links"><a href="index.html#products">Flat Belt Conveyor</a><a href="index.html#products">Inclined Belt Conveyor</a><a href="index.html#products">Truck Loading Conveyor</a><a href="index.html#products">Roller Conveyors</a><a href="index.html#products">Screw Conveyor</a><a href="index.html#products">Slat Chain Conveyor</a><a href="index.html#products">Wire Mesh Conveyor</a><a href="index.html#products">Bucket Elevator</a><a href="index.html#products">Pneumatic Conveying System</a><a href="index.html#products">Drum Filling Machine</a><a href="index.html#products">Tank Fabrication Work</a><a href="index.html#products">MS Trolley, Pallet &amp; Grating</a></div></div>
+      <div><h4>Company</h4><div class="footer-links"><a href="about.html">About Us</a><a href="industries.html">Industries</a><a href="case-studies.html">Case Studies</a><a href="blog.html">Blog</a><a href="careers.html">Careers</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div></div>
+      <div><h4>Resources</h4><div class="footer-links"><a href="quote.html">Request Quote</a><a href="#">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="#">Support</a><a href="#">Sitemap</a></div></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 TechMech Engineering. All rights reserved.</p><p><a href="#">Privacy Policy</a> &middot; <a href="#">Terms &amp; Conditions</a></p></div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-btns">
+  <a href="https://wa.me/919512696191" target="_blank" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:+919512696191" class="float-btn float-call" title="Call Us"><i class="fas fa-phone-alt"></i></a>
+  <a href="mailto:techmechengineering1@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
+  <button class="float-btn float-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to Top"><i class="fas fa-chevron-up"></i></button>
+</div>
+
+<!-- PRODUCT MODAL -->
+<div class="modal-overlay" id="productModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+    <h2 id="modalTitle">Product Name</h2>
+    <p class="modal-subtitle" id="modalSubtitle">Product overview</p>
+    <div id="modalContent"></div>
+    <div class="modal-cta"><a href="#quote" class="btn btn-primary" onclick="closeModal()"><i class="fas fa-file-invoice"></i> Request Quote for This Product</a></div>
+  </div>
+</div>
+
+<!-- LEAD POPUP -->
+<div class="lead-popup" id="leadPopup">
+  <button class="lead-popup-close" onclick="document.getElementById('leadPopup').classList.remove('active')"><i class="fas fa-times"></i></button>
+  <h3>Need Help Choosing?</h3>
+  <p>Get a free consultation from our engineering team. We'll help you find the perfect solution.</p>
+  <input type="email" placeholder="Enter your email">
+  <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="document.getElementById('leadPopup').classList.remove('active')">Get Free Consultation</button>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// Header scroll
+const header=document.querySelector('.header'),backToTop=document.getElementById('backToTop');
+window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>50);backToTop.classList.toggle('visible',window.scrollY>600)});
+
+// Reveal on scroll
+const reveals=document.querySelectorAll('.reveal');
+const revealObserver=new IntersectionObserver((entries)=>{entries.forEach((entry,i)=>{if(entry.isIntersecting){setTimeout(()=>entry.target.classList.add('active'),i*80);revealObserver.unobserve(entry.target)}})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+reveals.forEach(el=>revealObserver.observe(el));
+
+// Counter animation
+const counters=document.querySelectorAll('[data-count]');
+const counterObserver=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){const el=entry.target;const target=parseInt(el.dataset.count);let current=0;const increment=target/60;const timer=setInterval(()=>{current+=increment;if(current>=target){current=target;clearInterval(timer)}el.textContent=Math.floor(current)+(target>=100?'+':'+')},25);counterObserver.unobserve(el)}})},{threshold:0.5});
+counters.forEach(el=>counterObserver.observe(el));
+
+// Product modal
+const products=[
+  {name:'Flat Belt Conveyor',desc:'PVC/PU/Rubber belt conveyor with variable speed control, customizable load capacity and adjustable frame height. Ideal for general material transport across manufacturing lines.',features:['Belt Type: PVC / PU / Rubber','Belt Width: 100 mm to 2000 mm','Belt Speed: 5 to 60 m/min (Variable)','Load Capacity: Up to 200 kg/m (Customizable)','Conveyor Length: 1 m to 30 m','Height: 700 mm to 1000 mm (Adjustable)','Frame: MS Powder Coated / SS304 / Aluminum','Motor Power: 0.25 HP to 3 HP','Voltage: 220V / 415V, 3 Phase','Drive Type: Head / Center / End Drive']},
+  {name:'Inclined Belt Conveyor',desc:'Designed for elevation changes in production lines, featuring adjustable inclination angles from 15° to 60° with cleated belt options for secure material handling on slopes.',features:['Belt Width: 200 mm to 1200 mm','Inclination Angle: 15° to 45° (up to 60° with cleats)','Belt Speed: 5 to 40 m/min','Load Capacity: Up to 1500 kg/m','Conveyor Length: 2 m to 25 m','Frame: MS Powder Coated / SS304','Motor Power: 0.5 HP to 5 HP','Drive Type: Bottom Drive / Top Drive','Cleat Height: 20 mm to 100 mm']},
+  {name:'Truck Loading Conveyor',desc:'Height-adjustable conveyor system designed for efficient truck and container loading/unloading operations with variable inclination and extended reach.',features:['Belt Type: PVC / Rubber / Rough Top','Belt Width: 400 mm to 1000 mm','Conveyor Length: 6 m to 15 m','Height Adjustment: 800 mm to 3000 mm','Inclination Angle: 0° to 30°','Load Capacity: Up to 150 kg/m','Belt Speed: 10 to 45 m/min','Motor Power: 0.5 HP to 3 HP']},
+  {name:'Roller Conveyors',desc:'Complete range of gravity and powered roller conveyors for smooth material flow in assembly lines, packaging, warehousing and distribution centers.',features:['Gravity Roller — Roller Diameter: 50 mm to 102 mm','Roller Material: MS / SS / PVC','Conveyor Width: 300 mm to 1500 mm','Conveyor Length: 2 m to 30 m','Load Capacity: Up to 300 kg/m','Powered Speed: 10 to 60 m/min','Drive Type: Chain Drive / Belt Drive','Motor Power: 0.5 HP to 5 HP','Control System: PLC / VFD (Optional)']},
+  {name:'Screw Conveyor',desc:'Precision-engineered screw conveyors for handling powders, granules and semi-solid materials with equal or variable pitch configurations.',features:['Screw Diameter: 100 mm to 600 mm','Capacity: Up to 100 TPH','Conveyor Length: 1 m to 25 m','Inclination Angle: 0° to 45°','Screw Pitch: Equal / Variable Pitch','Rotation Speed: 20 to 150 RPM','Material: MS / SS304 / SS316','Motor Power: 1 HP to 15 HP']},
+  {name:'Slat Chain Conveyor',desc:'Robust slat chain conveyor systems built for heavy loads, high temperatures and demanding industrial environments with various slat material options.',features:['Slat Material: MS / SS / Plastic','Chain Type: Roller Chain / Conveyor Chain','Slat Width: 200 mm to 1500 mm','Conveyor Length: 2 m to 40 m','Load Capacity: Up to 500 kg/m','Speed: 3 to 30 m/min']},
+  {name:'Wire Mesh Conveyor',desc:'Stainless steel wire mesh belt conveyors designed for high-temperature applications including baking, drying, curing and heat treatment processes.',features:['Belt Type: SS Wire Mesh','Belt Width: 200 mm to 2000 mm','Conveyor Length: 2 m to 30 m','Load Capacity: Up to 100 kg/m','Operating Temperature: Up to 800°C']},
+  {name:'Bucket Elevator',desc:'Vertical material handling solutions for efficient lifting of bulk materials across multiple floor levels with various bucket types and configurations.',features:['Bucket Type: Plastic / MS / SS','Bucket Capacity: 1 L to 20 L','System Capacity: Up to 200 TPH','Elevator Height: Up to 30 meters','Motor Power: 2 HP to 20 HP','Drive Type: Top Drive / Bottom Drive']},
+  {name:'Pneumatic Conveying System',desc:'Complete pneumatic conveying solutions for powder and granule transport with integrated heating and cooling capabilities for process-critical applications.',features:['Conveying Capacity: 0.5 TPH to 30 TPH','Conveying Distance: Up to 150 meters','Air Velocity: 15 to 25 m/s','Working Pressure: 0.5 to 2 bar','Temperature Range: Heating up to 200°C / Cooling down to 10°C','Pipeline Diameter: 50 mm to 250 mm','Control System: PLC with Temperature Control']},
+  {name:'Drum Filling Machine',desc:'Semi-automatic and automatic drum filling systems with PLC-HMI control, available in gravimetric (weighing) and flow meter types for precise filling.',features:['Filling Capacity: 50 L to 1000 L','Filling Accuracy: ±0.1% to ±0.5%','Control System: PLC with HMI','Semi-Automatic Drum Filling Machine','Automatic Drum Filling Machine','Gravimetric (Weighing Type)','Flow Meter Type']},
+  {name:'Tank Fabrication Work',desc:'Custom tank fabrication from 100 liters to 5000+ liters in various materials with professional welding and finishing capabilities.',features:['Capacity: 100 Liters to 5000+ Liters','Material Thickness: 2 mm to 20 mm','Design Type: Vertical / Horizontal','Finish: Mirror / Matte / Painted','Welding: TIG / MIG / ARC','Materials: MS, SS304, SS316, SA516, Special Alloys']},
+  {name:'MS Trolley, Pallet & Grating',desc:'Complete range of MS trolleys, heavy-duty pallets and industrial grating solutions for material handling and facility infrastructure.',features:['MS Trolley: Platform / Cage / Heavy Duty / Custom','MS Pallet: Heavy Duty / Stackable / 2-way & 4-way Entry','MS Grating: Welded / Press Lock / Hot Dip Galvanized / Anti-Skid','Custom Fabrication Available','Industrial Grade Construction','Corrosion Resistant Options']}
+];
+function openProductModal(idx){const p=products[idx];document.getElementById('modalTitle').textContent=p.name;document.getElementById('modalSubtitle').textContent=p.desc;let html='<div class="modal-features">';p.features.forEach(f=>{html+=`<div class="modal-feature"><i class="fas fa-check-circle"></i> ${f}</div>`});html+='</div>';document.getElementById('modalContent').innerHTML=html;document.getElementById('productModal').classList.add('active');document.body.style.overflow='hidden'}
+function closeModal(){document.getElementById('productModal').classList.remove('active');document.body.style.overflow=''}
+document.getElementById('productModal').addEventListener('click',function(e){if(e.target===this)closeModal()});
+
+// Multi-step form
+function nextStep(step){document.querySelectorAll('.form-step-content').forEach(el=>el.classList.remove('active'));document.querySelectorAll('.form-step').forEach(el=>el.classList.remove('active'));document.querySelector(`.form-step-content[data-step="${step}"]`).classList.add('active');for(let i=1;i<=step;i++)document.querySelector(`.form-step[data-step="${i}"]`).classList.add('active')}
+function submitQuote(e){e.preventDefault();alert('Thank you for your inquiry! Our engineering team will contact you within 24 hours.');e.target.reset();nextStep(1);return false}
+
+// FAQ
+function toggleFaq(el){const item=el.parentElement;const wasActive=item.classList.contains('active');document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('active');i.querySelector('.faq-answer').style.maxHeight='0'});if(!wasActive){item.classList.add('active');const answer=item.querySelector('.faq-answer');answer.style.maxHeight=answer.scrollHeight+'px'}}
+
+// Blog
+function filterCategory(el,cat){document.querySelectorAll('.blog-cat').forEach(c=>c.classList.remove('active'));el.classList.add('active');document.querySelectorAll('.blog-card').forEach(card=>{card.style.display=(cat==='all'||card.dataset.category===cat)?'':'none'})}
+function filterBlog(){const q=document.getElementById('blogSearch').value.toLowerCase();document.querySelectorAll('.blog-card').forEach(card=>{card.style.display=card.textContent.toLowerCase().includes(q)?'':'none'})}
+
+// Lead popup
+setTimeout(()=>{if(!sessionStorage.getItem('popupShown')){document.getElementById('leadPopup').classList.add('active');sessionStorage.setItem('popupShown','1')}},15000);
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const target=document.querySelector(this.getAttribute('href'));if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth'})}})});
+</script>
