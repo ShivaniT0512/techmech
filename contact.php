@@ -7,7 +7,7 @@ include 'header.php';
 ?>
 
 <!-- PAGE HERO -->
-<section class="page-hero">
+<section class="page-hero" id="main-content">
   <div class="page-hero-content">
     <div class="container">
       <div class="breadcrumb"><a href="index.php">Home</a> <i class="fas fa-chevron-right"></i> <span>Contact</span></div>
@@ -45,7 +45,7 @@ include 'header.php';
           </div>
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a href="https://wa.me/919512696191" target="_blank" class="btn" style="background:#25D366;color:white"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://wa.me/919512696191" target="_blank" rel="noopener noreferrer" class="btn" style="background:#25D366;color:white"><i class="fab fa-whatsapp"></i> WhatsApp</a>
           <a href="tel:+919512696191" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
           <a href="mailto:techmechengineering1@gmail.com" class="btn btn-dark"><i class="fas fa-envelope"></i> Email</a>
         </div>
@@ -55,7 +55,7 @@ include 'header.php';
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.123!2d72.95777!3d20.36186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e6b1d5b3b8d%3A0x7a3b8b8e8e8e8e8e!2s4th%20Phase%20GIDC%2C%20Vapi!5e0!3m2!1sen!2sin!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div style="text-align:center;padding:16px;background:var(--light-bg);border-radius:0 0 var(--radius-lg) var(--radius-lg);border:1px solid var(--border);border-top:none;margin-top:-1px;">
-          <a href="https://www.google.com/maps?q=20.361855,72.959961" target="_blank" style="color:var(--primary);font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;">
+          <a href="https://www.google.com/maps?q=20.361855,72.959961" target="_blank" rel="noopener noreferrer" style="color:var(--primary);font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;">
             <i class="fas fa-map-marker-alt"></i> View Larger Map on Google Maps
           </a>
         </div>

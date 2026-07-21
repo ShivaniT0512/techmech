@@ -8,10 +8,7 @@
         </a>
         <p>Engineering efficient material handling solutions for industries across India. 10+ years of experience in designing and manufacturing conveyor systems.</p>
         <div class="footer-social">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://youtube.com/@techmechengineering-1" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com/@techmechengineering-1" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
       <div>
@@ -35,10 +32,9 @@
         <h4>Company</h4>
         <div class="footer-links">
           <a href="about.php">About Us</a>
-          <a href="industries.php">Industries</a>
+          <a href="index.php#industries">Industries</a>
           <a href="index.php#blog">Blog</a>
-          <a href="careers.php">Careers</a>
-          <a href="faq.php">FAQ</a>
+          <a href="index.php#faq">FAQ</a>
           <a href="contact.php">Contact</a>
         </div>
       </div>
@@ -46,34 +42,28 @@
         <h4>Resources</h4>
         <div class="footer-links">
           <a href="quote.php">Request Quote</a>
-          <a href="#">Download Catalogue</a>
-          <a href="privacy-policy.php">Privacy Policy</a>
-          <a href="terms.php">Terms &amp; Conditions</a>
-          <a href="#">Support</a>
-          <a href="#">Sitemap</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; <?php echo date('Y'); ?> TechMech Engineering. All rights reserved.</p>
-      <p><a href="privacy-policy.php">Privacy Policy</a> &middot; <a href="terms.php">Terms &amp; Conditions</a></p>
     </div>
   </div>
 </footer>
 
 <!-- FLOATING BUTTONS -->
 <div class="floating-btns">
-  <a href="https://wa.me/919512696191" target="_blank" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://wa.me/919512696191" target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
   <a href="tel:+919512696191" class="float-btn float-call" title="Call Us"><i class="fas fa-phone-alt"></i></a>
   <a href="mailto:techmechengineering1@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
-  <button class="float-btn float-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to Top"><i class="fas fa-chevron-up"></i></button>
+  <button class="float-btn float-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to Top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
 </div>
 
 <?php if ($currentPage === 'home'): ?>
 <!-- PRODUCT MODAL -->
 <div class="modal-overlay" id="productModal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close dialog"><i class="fas fa-times"></i></button>
     <h2 id="modalTitle">Product Name</h2>
     <p class="modal-subtitle" id="modalSubtitle">Product overview</p>
     <div id="modalContent"></div>
@@ -84,11 +74,12 @@
 </div>
 
 <!-- LEAD POPUP -->
-<div class="lead-popup" id="leadPopup">
-  <button class="lead-popup-close" onclick="document.getElementById('leadPopup').classList.remove('active')"><i class="fas fa-times"></i></button>
-  <h3>Need Help Choosing?</h3>
+<div class="lead-popup" id="leadPopup" role="dialog" aria-modal="true" aria-labelledby="leadPopupTitle">
+  <button class="lead-popup-close" onclick="document.getElementById('leadPopup').classList.remove('active')" aria-label="Close popup"><i class="fas fa-times"></i></button>
+  <h3 id="leadPopupTitle">Need Help Choosing?</h3>
   <p>Get a free consultation from our engineering team. We'll help you find the perfect solution.</p>
-  <input type="email" placeholder="Enter your email">
+  <label for="leadPopupEmail" style="position:absolute;left:-9999px;">Email address</label>
+  <input type="email" id="leadPopupEmail" placeholder="Enter your email">
   <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="document.getElementById('leadPopup').classList.remove('active')">Get Free Consultation</button>
 </div>
 <?php endif; ?>
@@ -140,13 +131,32 @@ function toggleFaq(el) {
   document.querySelectorAll('.faq-item').forEach(i => {
     i.classList.remove('active');
     i.querySelector('.faq-answer').style.maxHeight = '0';
+    i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
   });
   if (!wasActive) {
     item.classList.add('active');
     const answer = item.querySelector('.faq-answer');
     answer.style.maxHeight = answer.scrollHeight + 'px';
+    el.setAttribute('aria-expanded', 'true');
   }
 }
+
+// Keyboard support for div-based interactive controls (role="button")
+document.addEventListener('keydown', function(e) {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('[role="button"]')) {
+    e.preventDefault();
+    e.target.click();
+  }
+});
+
+// Escape closes modal / lead popup
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    if (typeof closeModal === 'function') closeModal();
+    const popup = document.getElementById('leadPopup');
+    if (popup) popup.classList.remove('active');
+  }
+});
 
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {

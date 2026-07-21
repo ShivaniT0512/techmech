@@ -2,9 +2,20 @@
 // submit_quote.php - Form handler for quote requests
 // This file processes the quote form submission and sends email notifications
 
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: index.php');
     exit;
+}
+
+// CSRF check: token must match the one issued to this session's form
+$submittedToken = $_POST['csrf_token'] ?? '';
+if (empty($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $submittedToken)) {
+    http_response_code(403);
+    die('Your session has expired or this form was submitted from an untrusted source. Please <a href="quote.php">go back</a> and try again.');
 }
 
 // Strip control characters (CR/LF etc.) to prevent email header/subject injection

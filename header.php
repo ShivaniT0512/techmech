@@ -1,4 +1,10 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
 if (!isset($pageTitle)) $pageTitle = 'Efficiency In Every Move | Material Handling Solutions';
 if (!isset($pageDesc)) $pageDesc = 'TechMech Engineering - Leading manufacturer of belt, roller, screw & slat conveyor systems. 10+ years experience in material handling solutions. Based in Vapi, Gujarat.';
 if (!isset($pageKeywords)) $pageKeywords = 'conveyor systems, belt conveyor, roller conveyor, screw conveyor, material handling, industrial automation, Vapi Gujarat';
@@ -47,6 +53,8 @@ if (!isset($currentPage)) $currentPage = 'home';
 </head>
 <body>
 
+<a href="#main-content" class="skip-link">Skip to content</a>
+
 <!-- HEADER -->
 <header class="header" id="header">
   <div class="header-inner">
@@ -73,21 +81,21 @@ if (!isset($currentPage)) $currentPage = 'home';
           <a href="index.php#products"><i class="fas fa-dolly"></i> MS Trolley, Pallet &amp; Grating</a>
         </div>
       </div>
-      <a href="industries.php"<?php if ($currentPage === 'industries') echo ' class="active"'; ?>>Industries</a>
+      <a href="index.php#industries"<?php if ($currentPage === 'industries') echo ' class="active"'; ?>>Industries</a>
       <a href="index.php#blog"<?php if ($currentPage === 'blog') echo ' class="active"'; ?>>Blog</a>
       <a href="contact.php"<?php if ($currentPage === 'contact') echo ' class="active"'; ?>>Contact</a>
     </nav>
     <div class="header-cta">
       <a href="tel:+919512696191" class="header-phone"><i class="fas fa-phone-alt"></i> +91 95126 96191</a>
-      <a href="#quote" class="btn btn-primary">Get Quote</a>
+      <a href="quote.php" class="btn btn-primary">Get Quote</a>
     </div>
-    <button class="mobile-toggle" onclick="document.querySelector('.mobile-menu').classList.toggle('active')"><i class="fas fa-bars"></i></button>
+    <button class="mobile-toggle" onclick="document.querySelector('.mobile-menu').classList.toggle('active')" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
   </div>
 </header>
 <div class="mobile-menu">
   <a href="index.php" onclick="this.parentElement.classList.remove('active')">Home</a>
   <a href="about.php" onclick="this.parentElement.classList.remove('active')">About</a>
-  <a href="industries.php" onclick="this.parentElement.classList.remove('active')">Industries</a>
+  <a href="index.php#industries" onclick="this.parentElement.classList.remove('active')">Industries</a>
   <a href="index.php#blog" onclick="this.parentElement.classList.remove('active')">Blog</a>
   <a href="contact.php" onclick="this.parentElement.classList.remove('active')">Contact</a>
   <a href="quote.php" onclick="this.parentElement.classList.remove('active')" style="color:var(--primary);font-weight:700">Request Quote</a>

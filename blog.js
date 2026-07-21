@@ -40,6 +40,14 @@ function filterBlog() {
   });
 }
 
+// Keyboard support for span-based interactive controls (role="button")
+document.addEventListener('keydown', function (e) {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('[role="button"]')) {
+    e.preventDefault();
+    e.target.click();
+  }
+});
+
 // Smooth scroll for in-page anchors
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', function (e) {

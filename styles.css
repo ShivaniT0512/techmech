@@ -139,6 +139,19 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); font-weight: 700; line-hei
   opacity: 1;
   transform: translateY(0);
 }
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 20px;
+  z-index: 2000;
+  border-radius: 0 0 8px 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+.skip-link:focus { left: 0; }
 
 /* === HEADER === */
 .header {

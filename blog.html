@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
   <!-- HEADER -->
   <header class="header" id="header">
     <div class="header-inner">
@@ -45,7 +46,7 @@
         <a href="tel:+919512696191" class="header-phone"><i class="fas fa-phone-alt"></i> +91 95126 96191</a>
         <a href="index.html#quote" class="btn btn-primary">Get Quote</a>
       </div>
-      <button class="mobile-toggle" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+      <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
     </div>
   </header>
   <div class="mobile-menu">
@@ -60,7 +61,7 @@
   </div>
 
   <!-- PAGE HERO -->
-  <section class="page-hero">
+  <section class="page-hero" id="main">
     <div class="page-hero-bg-pattern"></div>
     <div class="container">
       <div class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Blog</span></div>
@@ -77,13 +78,13 @@
         <div class="blog-search"><i class="fas fa-search"></i><input type="text" placeholder="Search articles..." id="blogSearch" onkeyup="filterBlog()"></div>
       </div>
       <div class="blog-categories">
-        <span class="blog-cat active" onclick="filterCategory(this,'all')">All</span>
-        <span class="blog-cat" onclick="filterCategory(this,'material-handling')">Material Handling</span>
-        <span class="blog-cat" onclick="filterCategory(this,'conveyor-systems')">Conveyor Systems</span>
-        <span class="blog-cat" onclick="filterCategory(this,'automation')">Automation</span>
-        <span class="blog-cat" onclick="filterCategory(this,'efficiency')">Efficiency</span>
-        <span class="blog-cat" onclick="filterCategory(this,'maintenance')">Maintenance</span>
-        <span class="blog-cat" onclick="filterCategory(this,'trends')">Trends</span>
+        <span class="blog-cat active" onclick="filterCategory(this,'all')" role="button" tabindex="0">All</span>
+        <span class="blog-cat" onclick="filterCategory(this,'material-handling')" role="button" tabindex="0">Material Handling</span>
+        <span class="blog-cat" onclick="filterCategory(this,'conveyor-systems')" role="button" tabindex="0">Conveyor Systems</span>
+        <span class="blog-cat" onclick="filterCategory(this,'automation')" role="button" tabindex="0">Automation</span>
+        <span class="blog-cat" onclick="filterCategory(this,'efficiency')" role="button" tabindex="0">Efficiency</span>
+        <span class="blog-cat" onclick="filterCategory(this,'maintenance')" role="button" tabindex="0">Maintenance</span>
+        <span class="blog-cat" onclick="filterCategory(this,'trends')" role="button" tabindex="0">Trends</span>
       </div>
       <div class="blog-grid" id="blogGrid">
         <div class="blog-card reveal" data-category="conveyor-systems">
@@ -146,10 +147,10 @@
 
   <!-- FLOATING BUTTONS -->
   <div class="floating-btns">
-    <a href="https://wa.me/919512696191" target="_blank" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://wa.me/919512696191" target="_blank" rel="noopener noreferrer" class="float-btn float-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
     <a href="tel:+919512696191" class="float-btn float-call" title="Call Us"><i class="fas fa-phone-alt"></i></a>
     <a href="mailto:techmechengineering1@gmail.com" class="float-btn float-email" title="Email"><i class="fas fa-envelope"></i></a>
-    <button class="float-btn float-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to Top"><i class="fas fa-chevron-up"></i></button>
+    <button class="float-btn float-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to Top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
   </div>
 
   <!-- FOOTER -->

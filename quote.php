@@ -7,7 +7,7 @@ include 'header.php';
 ?>
 
 <!-- PAGE HERO -->
-<section class="page-hero">
+<section class="page-hero" id="main-content">
   <div class="page-hero-content">
     <div class="container">
       <div class="breadcrumb"><a href="index.php">Home</a> <i class="fas fa-chevron-right"></i> <span>Request Quote</span></div>
@@ -42,31 +42,32 @@ include 'header.php';
         </div>
         <form id="quoteForm" action="submit_quote.php" method="POST" enctype="multipart/form-data">
           <p style="position:absolute;left:-9999px;" aria-hidden="true"><label>Leave this field blank: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($_SESSION['csrf_token']); ?>">
           <div class="form-step-content active" data-step="1">
             <h3 style="color:white;font-size:18px;margin-bottom:20px">Your Information</h3>
             <div class="form-row">
               <div class="form-group">
-                <label>Full Name *</label>
-                <input type="text" name="name" placeholder="Your name" maxlength="100" required>
+                <label for="q-name">Full Name *</label>
+                <input type="text" id="q-name" name="name" placeholder="Your name" maxlength="100" required>
               </div>
               <div class="form-group">
-                <label>Company Name *</label>
-                <input type="text" name="company" placeholder="Company name" maxlength="100" required>
+                <label for="q-company">Company Name *</label>
+                <input type="text" id="q-company" name="company" placeholder="Company name" maxlength="100" required>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label>Email *</label>
-                <input type="email" name="email" placeholder="Email address" maxlength="150" required>
+                <label for="q-email">Email *</label>
+                <input type="email" id="q-email" name="email" placeholder="Email address" maxlength="150" required>
               </div>
               <div class="form-group">
-                <label>Phone *</label>
-                <input type="tel" name="phone" placeholder="+91 XXXXX XXXXX" pattern="[0-9+\-\s()]{7,20}" maxlength="20" required>
+                <label for="q-phone">Phone *</label>
+                <input type="tel" id="q-phone" name="phone" placeholder="+91 XXXXX XXXXX" pattern="[0-9+\-\s()]{7,20}" maxlength="20" required>
               </div>
             </div>
             <div class="form-group">
-              <label>Industry</label>
-              <select name="industry">
+              <label for="q-industry">Industry</label>
+              <select id="q-industry" name="industry">
                 <option value="">Select your industry</option>
                 <option>Integrated Chemical Manufacturing</option>
                 <option>Aluminium Manufacturing</option>
@@ -88,8 +89,8 @@ include 'header.php';
           <div class="form-step-content" data-step="2">
             <h3 style="color:white;font-size:18px;margin-bottom:20px">Project Requirements</h3>
             <div class="form-group">
-              <label>Product Requirement *</label>
-              <select name="product" required>
+              <label for="q-product">Product Requirement *</label>
+              <select id="q-product" name="product" required>
                 <option value="">Select product type</option>
                 <option>Flat Belt Conveyor</option>
                 <option>Inclined Belt Conveyor</option>
@@ -106,8 +107,8 @@ include 'header.php';
               </select>
             </div>
             <div class="form-group">
-              <label>Project Description</label>
-              <textarea name="description" placeholder="Describe your requirements, material type, capacity needs, facility details..." maxlength="2000"></textarea>
+              <label for="q-description">Project Description</label>
+              <textarea id="q-description" name="description" placeholder="Describe your requirements, material type, capacity needs, facility details..." maxlength="2000"></textarea>
             </div>
             <div class="form-nav">
               <button type="button" class="btn btn-outline" onclick="nextStep(1)"><i class="fas fa-arrow-left"></i> Back</button>
@@ -125,8 +126,8 @@ include 'header.php';
               </label>
             </div>
             <div class="form-group">
-              <label>Preferred Contact Time</label>
-              <select name="contact_time">
+              <label for="q-contact_time">Preferred Contact Time</label>
+              <select id="q-contact_time" name="contact_time">
                 <option>Anytime</option>
                 <option>Morning (9 AM - 12 PM)</option>
                 <option>Afternoon (12 PM - 4 PM)</option>

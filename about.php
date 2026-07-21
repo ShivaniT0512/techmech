@@ -7,7 +7,7 @@ include 'header.php';
 ?>
 
 <!-- PAGE HERO -->
-<section class="page-hero">
+<section class="page-hero" id="main-content">
   <div class="page-hero-content">
     <div class="container">
       <div class="breadcrumb"><a href="index.php">Home</a> <i class="fas fa-chevron-right"></i> <span>About Us</span></div>
