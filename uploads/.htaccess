@@ -1,0 +1,4 @@
+# Uploaded files must never be executable, regardless of extension whitelisting upstream.
+php_flag engine off
+AddHandler cgi-script .php .php3 .php4 .php5 .php7 .phtml .pl .py .cgi .sh .exe
+Options -ExecCGI -Indexes

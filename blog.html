@@ -4,6 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Engineering Knowledge Hub | TechMech Engineering Blog</title>
+  <link rel="canonical" href="https://www.techmechengineering.co.in/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Engineering Knowledge Hub | TechMech Engineering Blog">
+  <meta property="og:description" content="Expert insights on conveyor systems, material handling, industrial automation, maintenance tips, and engineering trends from TechMech Engineering.">
+  <meta property="og:url" content="https://www.techmechengineering.co.in/blog.html">
+  <meta property="og:image" content="https://www.techmechengineering.co.in/images/about.jpg">
+  <meta property="og:site_name" content="TechMech Engineering">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Engineering Knowledge Hub | TechMech Engineering Blog">
+  <meta name="twitter:description" content="Expert insights on conveyor systems, material handling, industrial automation, maintenance tips, and engineering trends from TechMech Engineering.">
+  <meta name="twitter:image" content="https://www.techmechengineering.co.in/images/about.jpg">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <meta name="description" content="Expert insights on conveyor systems, material handling, industrial automation, maintenance tips, and engineering trends from TechMech Engineering.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,47 +31,32 @@
   <header class="header" id="header">
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <img src="logo1.png" alt="TechMech Engineering" style="height: 50px; width: auto;">
+        <img src="images/logo.png" alt="TechMech Engineering" style="height: 50px; width: auto;">
       </a>
       <nav class="nav-links">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <div class="dropdown">
-          <a href="products.html">Products <i class="fas fa-chevron-down" style="font-size:10px;margin-left:4px"></i></a>
-          <div class="dropdown-menu">
-            <a href="product-belt-conveyors.html"><i class="fas fa-arrows-alt-h"></i> Belt Conveyors</a>
-            <a href="product-roller-conveyors.html"><i class="fas fa-circle-notch"></i> Roller Conveyors</a>
-            <a href="product-screw-conveyors.html"><i class="fas fa-sync-alt"></i> Screw Conveyors</a>
-            <a href="product-slat-conveyors.html"><i class="fas fa-layer-group"></i> Slat Conveyors</a>
-            <a href="product-chain-conveyors.html"><i class="fas fa-link"></i> Chain Conveyors</a>
-            <a href="product-bucket-elevators.html"><i class="fas fa-arrow-up"></i> Bucket Elevators</a>
-            <a href="product-material-handling.html"><i class="fas fa-industry"></i> Material Handling</a>
-            <a href="product-custom-conveyors.html"><i class="fas fa-cogs"></i> Custom Conveyors</a>
-            <a href="product-automation.html"><i class="fas fa-robot"></i> Automation</a>
-          </div>
-        </div>
-        <a href="industries.html">Industries</a>
-        <a href="case-studies.html">Case Studies</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#industries">Industries</a>
         <a href="blog.html" class="active">Blog</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
       <div class="header-cta">
         <a href="tel:+919512696191" class="header-phone"><i class="fas fa-phone-alt"></i> +91 95126 96191</a>
-        <a href="quote.html" class="btn btn-primary">Get Quote</a>
+        <a href="index.html#quote" class="btn btn-primary">Get Quote</a>
       </div>
       <button class="mobile-toggle" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
     </div>
   </header>
   <div class="mobile-menu">
     <a href="index.html" onclick="toggleMobileMenu()">Home</a>
-    <a href="about.html" onclick="toggleMobileMenu()">About</a>
-    <a href="products.html" onclick="toggleMobileMenu()">Products</a>
-    <a href="industries.html" onclick="toggleMobileMenu()">Industries</a>
-    <a href="case-studies.html" onclick="toggleMobileMenu()">Case Studies</a>
+    <a href="index.html#about" onclick="toggleMobileMenu()">About</a>
+    <a href="index.html#products" onclick="toggleMobileMenu()">Products</a>
+    <a href="index.html#industries" onclick="toggleMobileMenu()">Industries</a>
     <a href="blog.html" onclick="toggleMobileMenu()">Blog</a>
-    <a href="faq.html" onclick="toggleMobileMenu()">FAQ</a>
-    <a href="contact.html" onclick="toggleMobileMenu()">Contact</a>
-    <a href="quote.html" onclick="toggleMobileMenu()" style="color:var(--primary);font-weight:700">Request Quote</a>
+    <a href="index.html#faq" onclick="toggleMobileMenu()">FAQ</a>
+    <a href="index.html#contact" onclick="toggleMobileMenu()">Contact</a>
+    <a href="index.html#quote" onclick="toggleMobileMenu()" style="color:var(--primary);font-weight:700">Request Quote</a>
   </div>
 
   <!-- PAGE HERO -->
@@ -86,7 +86,7 @@
         <span class="blog-cat" onclick="filterCategory(this,'trends')">Trends</span>
       </div>
       <div class="blog-grid" id="blogGrid">
-        <a href="blog-post-1.html" class="blog-card reveal" data-category="conveyor-systems">
+        <div class="blog-card reveal" data-category="conveyor-systems">
           <div class="blog-thumb"><i class="fas fa-arrows-alt-h"></i></div>
           <div class="blog-body">
             <div class="blog-meta"><span><i class="far fa-calendar"></i> Jun 15, 2025</span><span><i class="far fa-clock"></i> 5 min read</span></div>
@@ -94,8 +94,8 @@
             <p>A comprehensive guide to selecting belt conveyors based on material type, throughput requirements, and environmental conditions.</p>
             <span class="case-industry" style="display:inline-block;margin-top:8px;font-size:12px">Conveyor Systems</span>
           </div>
-        </a>
-        <a href="blog-post-2.html" class="blog-card reveal" data-category="maintenance">
+        </div>
+        <div class="blog-card reveal" data-category="maintenance">
           <div class="blog-thumb"><i class="fas fa-wrench"></i></div>
           <div class="blog-body">
             <div class="blog-meta"><span><i class="far fa-calendar"></i> Jun 8, 2025</span><span><i class="far fa-clock"></i> 4 min read</span></div>
@@ -103,8 +103,8 @@
             <p>Essential maintenance practices to extend conveyor lifespan, reduce downtime, and prevent costly breakdowns in your facility.</p>
             <span class="case-industry" style="display:inline-block;margin-top:8px;font-size:12px">Maintenance</span>
           </div>
-        </a>
-        <a href="blog-post-3.html" class="blog-card reveal" data-category="automation">
+        </div>
+        <div class="blog-card reveal" data-category="automation">
           <div class="blog-thumb"><i class="fas fa-robot"></i></div>
           <div class="blog-body">
             <div class="blog-meta"><span><i class="far fa-calendar"></i> May 28, 2025</span><span><i class="far fa-clock"></i> 6 min read</span></div>
@@ -112,8 +112,8 @@
             <p>Exploring IoT integration, smart sensors, and AI-driven optimization in modern conveying and material handling systems.</p>
             <span class="case-industry" style="display:inline-block;margin-top:8px;font-size:12px">Automation</span>
           </div>
-        </a>
-        <a href="blog-post-4.html" class="blog-card reveal" data-category="efficiency">
+        </div>
+        <div class="blog-card reveal" data-category="efficiency">
           <div class="blog-thumb"><i class="fas fa-chart-line"></i></div>
           <div class="blog-body">
             <div class="blog-meta"><span><i class="far fa-calendar"></i> May 20, 2025</span><span><i class="far fa-clock"></i> 7 min read</span></div>
@@ -121,8 +121,8 @@
             <p>Practical strategies to improve throughput, reduce energy consumption, and optimize your material handling operations.</p>
             <span class="case-industry" style="display:inline-block;margin-top:8px;font-size:12px">Efficiency</span>
           </div>
-        </a>
-        <a href="blog-post-5.html" class="blog-card reveal" data-category="material-handling">
+        </div>
+        <div class="blog-card reveal" data-category="material-handling">
           <div class="blog-thumb"><i class="fas fa-cogs"></i></div>
           <div class="blog-body">
             <div class="blog-meta"><span><i class="far fa-calendar"></i> May 12, 2025</span><span><i class="far fa-clock"></i> 5 min read</span></div>
@@ -130,8 +130,8 @@
             <p>Comparing the two most popular conveyor types across key parameters like material compatibility, cost, and maintenance needs.</p>
             <span class="case-industry" style="display:inline-block;margin-top:8px;font-size:12px">Material Handling</span>
           </div>
-        </a>
-        <a href="blog-post-6.html" class="blog-card reveal" data-category="trends">
+        </div>
+        <div class="blog-card reveal" data-category="trends">
           <div class="blog-thumb"><i class="fas fa-globe"></i></div>
           <div class="blog-body">
             <div class="blog-meta"><span><i class="far fa-calendar"></i> Apr 30, 2025</span><span><i class="far fa-clock"></i> 8 min read</span></div>
@@ -139,7 +139,7 @@
             <p>Key trends including modular systems, sustainable design, and digital twin technology transforming the material handling industry.</p>
             <span class="case-industry" style="display:inline-block;margin-top:8px;font-size:12px">Trends</span>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </section>
@@ -157,62 +157,45 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <div class="logo-icon"><i class="fas fa-cogs"></i></div>
-            <div class="logo-text">
-              <span class="logo-name" style="color:white">TechMech</span>
-              <span class="logo-tagline">Engineering</span>
-            </div>
-          </a>
+          <a href="index.html" class="logo"><img src="images/logo.png" alt="TechMech Engineering" style="height: 60px; width: 150px;"></a>
           <p>Engineering efficient material handling solutions for industries across India. 10+ years of experience in designing and manufacturing conveyor systems.</p>
           <div class="footer-social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://youtube.com/@techmechengineering-1" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
         <div>
           <h4>Products</h4>
           <div class="footer-links">
-            <a href="product-belt-conveyors.html">Belt Conveyors</a>
-            <a href="product-roller-conveyors.html">Roller Conveyors</a>
-            <a href="product-screw-conveyors.html">Screw Conveyors</a>
-            <a href="product-slat-conveyors.html">Slat Conveyors</a>
-            <a href="product-chain-conveyors.html">Chain Conveyors</a>
-            <a href="product-bucket-elevators.html">Bucket Elevators</a>
-            <a href="product-automation.html">Automation</a>
+            <a href="index.html#products">Belt Conveyors</a>
+            <a href="index.html#products">Roller Conveyors</a>
+            <a href="index.html#products">Screw Conveyors</a>
+            <a href="index.html#products">Slat Conveyors</a>
+            <a href="index.html#products">Chain Conveyors</a>
+            <a href="index.html#products">Bucket Elevators</a>
+            <a href="index.html#products">Automation</a>
           </div>
         </div>
         <div>
           <h4>Company</h4>
           <div class="footer-links">
-            <a href="about.html">About Us</a>
-            <a href="industries.html">Industries</a>
-            <a href="case-studies.html">Case Studies</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#industries">Industries</a>
             <a href="blog.html">Blog</a>
-            <a href="careers.html">Careers</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html#faq">FAQ</a>
+            <a href="index.html#contact">Contact</a>
           </div>
         </div>
         <div>
           <h4>Resources</h4>
           <div class="footer-links">
-            <a href="quote.html">Request Quote</a>
-            <a href="#">Download Catalogue</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms.html">Terms & Conditions</a>
-            <a href="#">Support</a>
-            <a href="#">Sitemap</a>
+            <a href="index.html#quote">Request Quote</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2025 TechMech Engineering. All rights reserved.</p>
-        <p><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms & Conditions</a></p>
       </div>
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+  <script src="blog.js"></script>

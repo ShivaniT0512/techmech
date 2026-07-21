@@ -24,8 +24,13 @@ yarn-error.log*
 .env.local
 .env.*.local
 
-# PHP runtime uploads (user-submitted files, not source)
-uploads/
+# PHP runtime uploads (user-submitted files, not source) — keep the
+# directory's own .htaccess (execution lockdown) tracked in git
+uploads/*
+!uploads/.htaccess
+
+# Claude Code local settings
+.claude/
 
 # Logs
 *.log
