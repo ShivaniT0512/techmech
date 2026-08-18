@@ -4,7 +4,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.php" class="logo">
-          <img src="images/logo.png" alt="TechMech Engineering" style="height: 60px; width: auto;">
+          <img src="images/logo.png" alt="Mechsow" style="height: 60px; width: auto;">
         </a>
         <p>Engineering efficient material handling solutions for industries across India. 10+ years of experience in designing and manufacturing conveyor systems.</p>
         <div class="footer-social">
@@ -46,7 +46,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <?php echo date('Y'); ?> TechMech Engineering. All rights reserved.</p>
+      <p>&copy; <?php echo date('Y'); ?> Mechsow. All rights reserved.</p>
     </div>
   </div>
 </footer>

@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Efficiency In Every Move | Material Handling Solutions';
-$pageDesc = 'TechMech Engineering - Leading manufacturer of belt, roller, screw & slat conveyor systems. 10+ years experience in material handling solutions. Based in Vapi, Gujarat.';
+$pageDesc = 'Mechsow - Leading manufacturer of belt, roller, screw & slat conveyor systems. 10+ years experience in material handling solutions. Based in Vapi, Gujarat.';
 $pageKeywords = 'conveyor systems, belt conveyor, roller conveyor, screw conveyor, material handling, industrial automation, Vapi Gujarat';
 $currentPage = 'home';
 include 'header.php';
@@ -59,13 +59,13 @@ include 'header.php';
   <div class="container">
     <div class="about-grid">
       <div class="about-image reveal">
-        <img src="images/about.jpg" alt="TechMech Engineering Facility" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);">
+        <img src="images/about.jpg" alt="Mechsow Facility" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);">
         <div class="about-experience"><div class="number">10+</div><div class="label">Years Experience</div></div>
       </div>
       <div class="about-content reveal">
-        <div class="section-label">About TechMech Engineering</div>
+        <div class="section-label">About Mechsow</div>
         <h2 class="section-title">Building India's Material Handling Future</h2>
-        <p>TechMech Engineering is a growing and reliable name in material handling and conveying systems based in Vapi, Gujarat. Backed by 10+ years of industry experience and 4+ years of company expertise, we specialize in designing and manufacturing high-performance conveying solutions.</p>
+        <p>Mechsow is a growing and reliable name in material handling and conveying systems based in Vapi, Gujarat. Backed by 10+ years of industry experience and 4+ years of company expertise, we specialize in designing and manufacturing high-performance conveying solutions.</p>
         <p>Our focus is on delivering durable, cost-effective and high-performance solutions that improve operational efficiency and productivity for industries across India.</p>
         <div class="about-products">
           <div class="about-product-item"><i class="fas fa-check-circle"></i> Flat Belt Conveyors</div>
@@ -322,7 +322,7 @@ include 'header.php';
 <!-- CONTACT -->
 <section id="contact" class="section contact">
   <div class="container">
-    <div class="reveal" style="margin-bottom:48px"><div class="section-label">Get In Touch</div><h2 class="section-title">Contact TechMech Engineering</h2></div>
+    <div class="reveal" style="margin-bottom:48px"><div class="section-label">Get In Touch</div><h2 class="section-title">Contact Mechsow</h2></div>
     <div class="contact-grid">
       <div class="reveal">
         <div class="contact-cards">

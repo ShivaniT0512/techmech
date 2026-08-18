@@ -6,7 +6,7 @@ if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
 if (!isset($pageTitle)) $pageTitle = 'Efficiency In Every Move | Material Handling Solutions';
-if (!isset($pageDesc)) $pageDesc = 'TechMech Engineering - Leading manufacturer of belt, roller, screw & slat conveyor systems. 10+ years experience in material handling solutions. Based in Vapi, Gujarat.';
+if (!isset($pageDesc)) $pageDesc = 'Mechsow - Leading manufacturer of belt, roller, screw & slat conveyor systems. 10+ years experience in material handling solutions. Based in Vapi, Gujarat.';
 if (!isset($pageKeywords)) $pageKeywords = 'conveyor systems, belt conveyor, roller conveyor, screw conveyor, material handling, industrial automation, Vapi Gujarat';
 if (!isset($currentPage)) $currentPage = 'home';
 ?>
@@ -17,7 +17,7 @@ if (!isset($currentPage)) $currentPage = 'home';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="<?php echo htmlspecialchars($pageDesc); ?>">
   <meta name="keywords" content="<?php echo htmlspecialchars($pageKeywords); ?>">
-  <title>TechMech Engineering | <?php echo htmlspecialchars($pageTitle); ?></title>
+  <title>Mechsow | <?php echo htmlspecialchars($pageTitle); ?></title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -32,7 +32,7 @@ if (!isset($currentPage)) $currentPage = 'home';
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "TechMech Engineering",
+    "name": "Mechsow",
     "url": "https://mechsow.com",
     "description": "Manufacturer of material handling and conveying systems",
     "address": {
@@ -59,7 +59,7 @@ if (!isset($currentPage)) $currentPage = 'home';
 <header class="header" id="header">
   <div class="header-inner">
     <a href="index.php" class="logo">
-      <img src="images/logo.png" alt="TechMech Engineering" style="height: 50px; width: auto;">
+      <img src="images/logo.png" alt="Mechsow" style="height: 50px; width: auto;">
     </a>
     <nav class="nav-links">
       <a href="index.php"<?php if ($currentPage === 'home') echo ' class="active"'; ?>>Home</a>

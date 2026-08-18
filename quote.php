@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Request a Quote | Custom Conveyor Solutions';
-$pageDesc = 'Get a free quote for custom conveyor systems and material handling solutions from TechMech Engineering.';
+$pageDesc = 'Get a free quote for custom conveyor systems and material handling solutions from Mechsow.';
 $pageKeywords = 'conveyor quote, material handling quote, custom conveyor pricing, request quote';
 $currentPage = 'quote';
 include 'header.php';

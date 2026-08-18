@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'About Us | 10+ Years of Engineering Excellence';
-$pageDesc = 'Learn about TechMech Engineering - leading manufacturer of material handling and conveying systems with 10+ years of experience in Vapi, Gujarat.';
+$pageDesc = 'Learn about Mechsow - leading manufacturer of material handling and conveying systems with 10+ years of experience in Vapi, Gujarat.';
 $pageKeywords = 'about mechsow, material handling manufacturer, conveyor systems, engineering excellence, Vapi Gujarat';
 $currentPage = 'about';
 include 'header.php';
@@ -11,7 +11,7 @@ include 'header.php';
   <div class="page-hero-content">
     <div class="container">
       <div class="breadcrumb"><a href="index.php">Home</a> <i class="fas fa-chevron-right"></i> <span>About Us</span></div>
-      <h1>About TechMech Engineering</h1>
+      <h1>About Mechsow</h1>
       <p>Building India's material handling future with 10+ years of engineering excellence and innovation.</p>
     </div>
   </div>
@@ -22,13 +22,13 @@ include 'header.php';
   <div class="container">
     <div class="about-grid">
       <div class="about-image reveal">
-        <img src="images/about.jpg" alt="TechMech Engineering Facility" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);">
+        <img src="images/about.jpg" alt="Mechsow Facility" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);">
         <div class="about-experience"><div class="number">10+</div><div class="label">Years Experience</div></div>
       </div>
       <div class="about-content reveal">
         <div class="section-label">Who We Are</div>
         <h2 class="section-title">Engineering Excellence Since 2015</h2>
-        <p>TechMech Engineering is a growing and reliable name in material handling and conveying systems based in Vapi, Gujarat. Backed by 10+ years of industry experience and 4+ years of company expertise, we specialize in designing and manufacturing high-performance conveying solutions.</p>
+        <p>Mechsow is a growing and reliable name in material handling and conveying systems based in Vapi, Gujarat. Backed by 10+ years of industry experience and 4+ years of company expertise, we specialize in designing and manufacturing high-performance conveying solutions.</p>
         <p>Our focus is on delivering durable, cost-effective and high-performance solutions that improve operational efficiency and productivity for industries across India.</p>
         <p>From flat belt conveyors to complex pneumatic systems, we engineer solutions that meet the unique demands of diverse industries including chemical manufacturing, pharmaceuticals, food processing, automotive, and more.</p>
       </div>

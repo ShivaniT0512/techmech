@@ -1,8 +1,8 @@
 <?php
 $status = ($_GET['status'] ?? '') === 'error' ? 'error' : 'success';
-$pageTitle = $status === 'success' ? 'Thank You | Quote Request Received' : 'Submission Error | TechMech Engineering';
-$pageDesc = 'Thank you for contacting TechMech Engineering. Our engineering team will review your request and respond within 24 hours.';
-$pageKeywords = 'techmech engineering, quote confirmation';
+$pageTitle = $status === 'success' ? 'Thank You | Quote Request Received' : 'Submission Error | Mechsow';
+$pageDesc = 'Thank you for contacting Mechsow. Our engineering team will review your request and respond within 24 hours.';
+$pageKeywords = 'mechsow, quote confirmation';
 $currentPage = 'thankyou';
 include 'header.php';
 ?>

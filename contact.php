@@ -1,6 +1,6 @@
 <?php
 $pageTitle = 'Contact Us | Get in Touch with Our Engineering Team';
-$pageDesc = 'Contact TechMech Engineering for custom conveyor systems and material handling solutions. Call +91-9512696191 or email us.';
+$pageDesc = 'Contact Mechsow for custom conveyor systems and material handling solutions. Call +91-9512696191 or email us.';
 $pageKeywords = 'contact mechsow, conveyor manufacturer contact, material handling inquiry, Vapi Gujarat';
 $currentPage = 'contact';
 include 'header.php';
@@ -11,7 +11,7 @@ include 'header.php';
   <div class="page-hero-content">
     <div class="container">
       <div class="breadcrumb"><a href="index.php">Home</a> <i class="fas fa-chevron-right"></i> <span>Contact</span></div>
-      <h1>Contact TechMech Engineering</h1>
+      <h1>Contact Mechsow</h1>
       <p>Get in touch with our engineering team to discuss your material handling requirements.</p>
     </div>
   </div>
