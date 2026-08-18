@@ -1,7 +1,7 @@
 <?php
 $pageTitle = 'Contact Us | Get in Touch with Our Engineering Team';
 $pageDesc = 'Contact TechMech Engineering for custom conveyor systems and material handling solutions. Call +91-9512696191 or email us.';
-$pageKeywords = 'contact techmech, conveyor manufacturer contact, material handling inquiry, Vapi Gujarat';
+$pageKeywords = 'contact mechsow, conveyor manufacturer contact, material handling inquiry, Vapi Gujarat';
 $currentPage = 'contact';
 include 'header.php';
 ?>

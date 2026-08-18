@@ -1,7 +1,7 @@
 <?php
 $pageTitle = 'About Us | 10+ Years of Engineering Excellence';
 $pageDesc = 'Learn about TechMech Engineering - leading manufacturer of material handling and conveying systems with 10+ years of experience in Vapi, Gujarat.';
-$pageKeywords = 'about techmech, material handling manufacturer, conveyor systems, engineering excellence, Vapi Gujarat';
+$pageKeywords = 'about mechsow, material handling manufacturer, conveyor systems, engineering excellence, Vapi Gujarat';
 $currentPage = 'about';
 include 'header.php';
 ?>
@@ -50,7 +50,7 @@ include 'header.php';
     <div style="margin-top:80px;">
       <div class="why-header reveal">
         <div class="section-label">Why Choose Us</div>
-        <h2 class="section-title">The TechMech Advantage</h2>
+        <h2 class="section-title">The Mechsow Advantage</h2>
         <p class="section-desc">What sets us apart in the material handling industry — a combination of experience, engineering excellence and customer commitment.</p>
       </div>
       <div class="why-grid">

@@ -67,7 +67,7 @@ You need to add the company logo image:
 
 ### Step 5: Test Website
 After uploading:
-1. Visit your domain (e.g., https://www.techmechengineering.co.in)
+1. Visit your domain (e.g., https://mechsow.com)
 2. Test all pages load correctly
 3. Test the quote form submission
 4. Verify all images display

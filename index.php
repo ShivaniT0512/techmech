@@ -132,7 +132,7 @@ include 'header.php';
   <div class="container">
     <div class="why-header reveal">
       <div class="section-label">Why Choose Us</div>
-      <h2 class="section-title">The TechMech Advantage</h2>
+      <h2 class="section-title">The Mechsow Advantage</h2>
       <p class="section-desc">What sets us apart in the material handling industry — a combination of experience, engineering excellence and customer commitment.</p>
     </div>
     <div class="why-grid">
@@ -233,7 +233,7 @@ include 'header.php';
     <div class="youtube-header" style="margin-bottom: 40px; text-align: left;">
       <div class="section-label">Video Resources</div>
       <h2 class="section-title">Learn From Our Engineering Experts</h2>
-      <p class="section-desc">Watch product demonstrations, installation guides and engineering insights from the TechMech team.</p>
+      <p class="section-desc">Watch product demonstrations, installation guides and engineering insights from the Mechsow team.</p>
     </div>
     <div class="youtube-featured">
       <div class="yt-main">
@@ -335,7 +335,7 @@ include 'header.php';
           <a href="https://wa.me/919512696191" target="_blank" rel="noopener noreferrer" class="btn" style="background:#25D366;color:white"><i class="fab fa-whatsapp"></i> WhatsApp</a>
           <a href="tel:+919512696191" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
           <a href="mailto:techmechengineering1@gmail.com" class="btn btn-dark"><i class="fas fa-envelope"></i> Email</a>
-          <a href="https://www.techmechengineering.co.in" target="_blank" rel="noopener noreferrer" class="btn" style="background:var(--secondary);color:white"><i class="fas fa-globe"></i> Website</a>
+          <a href="https://mechsow.com" target="_blank" rel="noopener noreferrer" class="btn" style="background:var(--secondary);color:white"><i class="fas fa-globe"></i> Website</a>
         </div>
       </div>
       <div class="reveal">

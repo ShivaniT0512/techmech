@@ -1,7 +1,7 @@
 # Netlify Deployment Guide
 
 This covers pushing the repo to GitHub, deploying the static site to Netlify, connecting
-`techmechengineering.co.in`, and verifying SSL. Everything up to "Push to GitHub" has
+`mechsow.com`, and verifying SSL. Everything up to "Push to GitHub" has
 already been prepared in this repo (`netlify.toml`, security headers, Netlify Forms,
 `.gitignore`). The steps below need your GitHub/Netlify accounts, so they're yours to run.
 
@@ -43,20 +43,20 @@ Netlify detects the form automatically from the static HTML (`data-netlify="true
 3. Submit a real test inquiry through the live site and confirm it shows up under
    **Forms → quote-request** and triggers the email.
 
-## 3. Connect the custom domain (techmechengineering.co.in)
+## 3. Connect the custom domain (mechsow.com)
 
 1. In the Netlify dashboard: **Site configuration → Domain management → Add a domain** →
-   enter `techmechengineering.co.in`.
+   enter `mechsow.com`.
 2. Netlify will ask you to either:
    - **Use Netlify DNS** (recommended, simplest): Netlify gives you 4 nameservers
      (e.g. `dns1.p0X.nsone.net`) — set these as the nameservers at your domain registrar
-     (wherever `techmechengineering.co.in` is registered). This hands all DNS management
+     (wherever `mechsow.com` is registered). This hands all DNS management
      to Netlify and SSL/www-redirect just work.
    - **Keep your current DNS provider**: instead add these records at your registrar/DNS host:
      - `A` record: `@` → `75.2.60.5` (Netlify's load balancer IP)
      - `CNAME` record: `www` → `<your-site-name>.netlify.app`
 3. DNS changes can take anywhere from a few minutes to 24-48 hours to propagate.
-4. Back in Netlify, set your **primary domain** (usually `www.techmechengineering.co.in`
+4. Back in Netlify, set your **primary domain** (usually `www.mechsow.com`
    or the apex, your choice) under **Domain management → Set primary domain** — the other
    variant will auto-redirect to it.
 
@@ -74,7 +74,7 @@ it — no action needed beyond step 3.
    after DNS is correct).
 2. Confirm **Force HTTPS** is toggled on (redirects any `http://` request to `https://`).
 3. Once live, verify from your own machine:
-   - Visit `https://techmechengineering.co.in` and `https://www.techmechengineering.co.in`
+   - Visit `https://mechsow.com` and `https://www.mechsow.com`
      — both should load with a valid padlock, no browser warnings.
    - Visit the `http://` version of each — should 301-redirect to `https://`.
 4. The security headers already configured in `netlify.toml` (HSTS, CSP, etc.) apply

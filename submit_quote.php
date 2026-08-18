@@ -118,7 +118,7 @@ $message .= "Attachment: $file_info\n";
 
 // Use a site-owned From address (avoids spoofing/spam-filter rejection);
 // the visitor's address goes in Reply-To so replying still reaches them.
-$headers = "From: TechMech Website <no-reply@techmechengineering.co.in>\r\n";
+$headers = "From: Mechsow Website <no-reply@mechsow.com>\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 

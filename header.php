@@ -33,7 +33,7 @@ if (!isset($currentPage)) $currentPage = 'home';
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "TechMech Engineering",
-    "url": "https://www.techmechengineering.co.in",
+    "url": "https://mechsow.com",
     "description": "Manufacturer of material handling and conveying systems",
     "address": {
       "@type": "PostalAddress",

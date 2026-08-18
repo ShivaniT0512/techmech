@@ -94,7 +94,7 @@ styles.css:         644
 ```
 
 ### Step 5: Test
-1. Visit your domain (e.g., https://www.techmechengineering.co.in)
+1. Visit your domain (e.g., https://mechsow.com)
 2. Test all pages load correctly
 3. Submit quote form and check email
 4. Verify all images display
